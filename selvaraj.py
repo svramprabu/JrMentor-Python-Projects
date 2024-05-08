@@ -357,3 +357,26 @@
 #     print('palindrome')
 # else:
 #     print('not a palindrome')
+
+# f = open('selva.txt') #throws error
+# f = open('selva.txt','w')
+# f.write('Selva is in his Higher secondary\n')
+# f.write('Hackerkid\n')
+#
+# f=open('selva.txt','a')
+# f.write('Appending data\n')
+#
+# f.close()
+#
+# f=open('selva.txt')
+# print(f.read())
+
+# try:
+#     f = open('sr.txt')
+# except:
+#     print('File not found or file name error')
+
+
+def selva():
+    pass
+selva()

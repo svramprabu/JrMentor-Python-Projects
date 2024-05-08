@@ -147,14 +147,32 @@
 # eg: x>y
 # if x is greater than y -> True
 # if x is smaller than y -> False
-print('5>2',5>2) #True
-print('5>10',5>10) #False
+# print('5>2',5>2) #True
+# print('5>10',5>10) #False
 
 # < Lesser than
 # eg: x<y
 # if x is less than y -> True
 # if x is bigger than y -> False
-print('5<10',5<10) #True
-print('5<2',5<2) #False
+# print('5<10',5<10) #True
+# print('5<2',5<2) #False
 
+# Python program to check password using while loop
+# saved_password = 'soham123'
+# user_password = ''
+# while ( saved_password != user_password):
+#     user_password = input('Enter password: ')
+#     if (user_password == saved_password):
+#         print('Success')
+#     else:
+#         print('Try again')
+# print('You have been logged in successfully')
 
+# Rock paper scissors:
+
+# while(True):
+#     p1 =
+#     p2 =
+#
+#     if
+#         ..

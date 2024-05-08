@@ -209,3 +209,18 @@
 #             print('task added successfully') #success message if task is not duplicate
 #         else: #if task is duplicate
 #             print('task not added as it is a duplicate') #failure message
+
+# File operations:
+
+f = open('elakiya.txt','w')
+f.write('Elakiya is an excellent student')
+f.close()
+
+f = open('elakiya.txt','a')
+f.write('Elakiya is studying Python')
+f.close()
+
+f = open('elakiya.txt')
+print(f.read())
+
+

@@ -89,10 +89,28 @@ b = 5
 # for i in range(1, 11):
 #     print(i, 'x', table, '=', i * table)
 
-a = int(input('a='))
-b = int(input('b='))
-for i in range(a,b):
-    print(i)
+# a = int(input('a='))
+# b = int(input('b='))
+# for i in range(a,b):
+#     print(i)
 
 
 
+# While loop
+# i = 1
+# while (i<10):
+#     print(i)
+#     # i = i+1
+#     i += 1
+
+# cycle 1: i=1 -> 1<10 -> True -> print(1) -> i = i+1 -> i = 2
+# cycle 2: i=2 -> 2<10 -> True -> print(2) -> i = i+1 -> i = 3
+
+# Python program to count the number digits in a number
+
+n = int(input('Number = ')) #12345
+ans = 0
+while (n>0):
+    n=n // 10 #modulus 1234 123 12 1 0
+    ans = ans + 1
+print('Total number of digits: ',ans)
