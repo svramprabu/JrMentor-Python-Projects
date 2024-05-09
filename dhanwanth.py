@@ -108,9 +108,22 @@ b = 5
 
 # Python program to count the number digits in a number
 
-n = int(input('Number = ')) #12345
-ans = 0
-while (n>0):
-    n=n // 10 #modulus 1234 123 12 1 0
-    ans = ans + 1
-print('Total number of digits: ',ans)
+# n = int(input('Number = ')) #12345
+# ans = 0
+# while (n>0):
+#     n=n // 10 #modulus 1234 123 12 1 0
+#     ans = ans + 1
+# print('Total number of digits: ',ans)
+
+
+# Python program to check user password
+
+# saved_password = 'dhan123'
+# user_password = ''
+# while (user_password != saved_password):
+#     user_password = input('Enter password: ')
+#     if (user_password == saved_password):
+#         print('Success')
+#     else:
+#         print('Try again')
+# print('You have been logged in successfully')
