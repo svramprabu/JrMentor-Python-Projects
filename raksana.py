@@ -180,19 +180,36 @@
 
 # Rock paper scissor
 # part 1 getting input from players
-p1 = input('Enter Rock(r) / paper(p) / scissor(s)')
-p2 = input('Enter Rock(r) / paper(p) / scissor(s)')
+# p1 = input('Enter Rock(r) / paper(p) / scissor(s)')
+# p2 = input('Enter Rock(r) / paper(p) / scissor(s)')
+#
+# #part 2 condition checking
+# if (p1 == 'r' and p2 == 'p'):
+#     print('player 2 wins')
+# elif (p1 == 'p' and p2 == 'r'):
+#     print('player 1 wins')
+# elif (p1 == 'r' and p2 == 's'):
+#     print('player 1 wins')
+# elif (p1 == 's' and p2 == 'r'):
+#     print('player 2 wins')
 
-#part 2 condition checking
-if (p1 == 'r' and p2 == 'p'):
-    print('player 2 wins')
-elif (p1 == 'p' and p2 == 'r'):
-    print('player 1 wins')
-elif (p1 == 'r' and p2 == 's'):
-    print('player 1 wins')
-elif (p1 == 's' and p2 == 'r'):
-    print('player 2 wins')
 
 
+# Password checker program
+# stored_password = 'raks123'
+# user_password = input("Enter the password: ")
+#
+# if (user_password == stored_password):
+#     print('Success')
+# else:
+#     print('Failure')
+
+list_of_toys = ['doll', 'car', 'bike']
+for i in list_of_toys:
+    print(i)
+
+for i in range(10):  # -> [0,1,2,3,4]
+    print('Raksana')
+    print(i)
 
 
