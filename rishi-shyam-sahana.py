@@ -390,48 +390,62 @@
 #         print('* ',end='')
 #     print()
 
-def add(): #type 1 no argument & no return value
-    a = int(input('a='))
-    b = int(input('b='))
-    print(f'{a}+{b}={a+b}')
+# def add(): #type 1 no argument & no return value
+#     a = int(input('a='))
+#     b = int(input('b='))
+#     print(f'{a}+{b}={a+b}')
+#
+# def sub(): #type 2 no argument with return value
+#     a = int(input('a='))
+#     b = int(input('b='))
+#     return f"{a}-{b}={a - b}"
+#
+# def mul(a,b): #type 3 with argument and no return
+#     print(f"{a}x{b}={a*b}")
+#
+# def div(a,b): #type 4 with argument and return value
+#     return f"{a}/{b}={a/b}"
+#
+# print('Welcome to my calculator app')
+# while(True):
+#     user_option = int(input("1.add\n2.sub\n3.mul\n4.div\n5.exit\nEnter your desired option: "))
+#     if (user_option == 1):
+#         print('You chose addition function')
+#         add()
+#     elif (user_option == 2):
+#         print("You chose Subtraction function")
+#         print(sub())
+#     elif (user_option == 3):
+#         print("You chose Multiplication function")
+#         a = int(input('a='))
+#         b = int(input('b='))
+#         mul(a,b)
+#     elif(user_option == 4):
+#         print("You chose Division function")
+#         a = int(input('a='))
+#         b = int(input('b='))
+#         print(div(a,b))
+#     elif(user_option == 5):
+#         print('Thank you for using my calculator ')
+#         break
+#     else:
+#         print("enter the correct option")
 
-def sub(): #type 2 no argument with return value
-    a = int(input('a='))
-    b = int(input('b='))
-    return (a-b)
+# from new_package import module1
+# module1.add()
 
-def mul(a,b): #type 3 with argument and no return
-    print(f"{a}x{b}={a*b}")
+# Dice simulator
 
-def div(a,b): #type 4 wioth argument and return value
-    return a/b
-
-print('Welcome to my calculator app')
+import random
+option = int(input('1.Roll 2.Exit'))
 while(True):
-    user_option = int(input("1.add\n2.sub\n3.mul\n4.div\n5.exit\nEnter your desired option: "))
-    if (user_option == 1):
-        print('You chose addition function')
-        add()
-    elif (user_option == 2):
-        print("You chose Subtraction function")
-        print(sub())
-    elif (user_option == 3):
-        print("You chose Multiplication function")
-        a = int(input('a='))
-        b = int(input('b='))
-        mul(a,b)
-    elif(user_option == 4):
-        print("You chose Division function")
-        a = int(input('a='))
-        b = int(input('b='))
-        print(div(a,b))
-    elif(user_option == 5):
-        print('Thank you for using my calculator ')
-        break
+    if(option == 1):
+        dice_output = random.randint(1,6)
+        print(f'You got {dice_output} after rollin gthe dice')
     else:
-        print("enter the correct option")
-
-
+        print('Thank you for playing')
+        break
+    option = int(input('1.Roll 2. Exit'))
 
 
 

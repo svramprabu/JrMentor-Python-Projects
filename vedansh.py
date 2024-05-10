@@ -155,10 +155,30 @@
 # x= 'abcdefg'
 # print(''.join(random.sample(x,3)))
 
-f = open('vedansh.txt','w')
-f.write('Vedansh is a talented student')
+# f = open('vedansh.txt','w')
+# f.write('Vedansh is a talented student')
+#
+# f = open('vedansh.txt')
+# print(f.read())
+#
+# f.close()
 
-f = open('vedansh.txt')
-print(f.read())
+# class Parent:
+#     def __init__(self,parentname):
+#         print('Hii from parent class')
+#         self.parentname = parentname
+#
+# class Child1(Parent):
+#     def __init__(self,parentname):
+#         print('Hii from child1')
+#         Parent.__init__(self,parentname)
+# a = Child1('Abba')
+# print(a.parentname)
+# a.func1()
 
-f.close()
+# import random
+# options = ['r','p','s']
+# com=random.choice(options)
+# print(com)
+# p =
+# while(True):

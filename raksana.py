@@ -204,12 +204,27 @@
 # else:
 #     print('Failure')
 
-list_of_toys = ['doll', 'car', 'bike']
-for i in list_of_toys:
-    print(i)
+# list_of_toys = ['doll', 'car', 'bike']
+# for i in list_of_toys:
+#     print(i)
+#
+# for i in range(10):  # -> [0,1,2,3,4]
+#     print('Raksana')
+#     print(i)
 
-for i in range(10):  # -> [0,1,2,3,4]
-    print('Raksana')
-    print(i)
+import random
+options = ['r','p','s']
+user_play=int(input('1.play 2.exit'))
+while(user_play == 1):
+    computer_option = random.choice(options)
+    player_option = input('Enter Rock (r) or Paper (p) or Scissor (s): ')
 
+    if (computer_option == 'p' and player_option == 'r'):
+        print('Computer won')
+    elif (computer_option =='r' and player_option == 'p'):
+        print('You won')
+    # r s
+    # s r
+    # p s
+    # s p
 

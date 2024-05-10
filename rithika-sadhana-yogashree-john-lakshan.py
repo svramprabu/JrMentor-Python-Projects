@@ -30,10 +30,10 @@
 # # to find the no of items in a list
 # print(len(eg_list))
 
-a = 10
-b = 12.5
-sum = a+b
-print(sum)
+# a = 10
+# b = 12.5
+# sum = a+b
+# print(sum)
 
 # Explicit type conversion
 # a =
@@ -41,8 +41,34 @@ print(sum)
 # float(a)
 # str(a)
 
-a = 10
-b = '12'
-b = int(b)
-sum = a+b
-print(sum)
+# a = 10
+# b = '12'
+# b = int(b)
+# sum = a+b
+# print(sum)
+
+a = 123
+b = 123.45
+c = "abcd"
+
+# print(a,b,c)
+
+# d = input('Your question here')
+# print(d)
+# print(type(d))
+#
+# e = int(input('your age'))
+# print(e)
+# print(type(e))
+#
+# f = float(input('your weight'))
+# print(f)
+# print(type(f))
+
+# print(a,b,c)
+# print(a,b,c,sep='--->')
+# print(a,sep='--->')
+# print(a,end='$$$')
+# print()
+
+
