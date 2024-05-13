@@ -42,9 +42,9 @@
 # print(z)
 # print(type(z))
 
-# a = 123
-# b = 13.7
-# c = 'Name'
+a = 123
+b = 13.7
+c = 'Name'
 #
 # print(a,b,c)
 # print(a,b,c,sep='->')
@@ -52,3 +52,31 @@
 # print('Hiii',end='--->')
 # print('Hello')
 
+# Python program to generate an introduction
+
+# n = input('Name: ')
+# l = input('location: ')
+# c = int(input('class: '))
+# f = input('Favourite subject: ')
+# h = input('Hobby: ')
+#
+# print(f"Hi my name is {n} and I am from {l} studying in class {c}, "
+#       f"my favourite subject is {f} and my hobby is {h}")
+
+# Arithmetic operators
+
+# + -> addition or concatenation
+print('5+3=',5+3) #addition
+print('5+3=','Hiii'+'Everyone') #concatenation
+# - -> subtraction
+print('5-3=',5-3)
+# * -> multiplication
+print('5*3=',5*3)
+# / -> division
+print(f"15 / 2 = {15/2}")
+# // -> modulus
+print(f"15 // 2 = {15 // 2}")
+# % -> remainder
+print(f"15 % 2 = {15%2}")
+# ** -> power
+print(f"2**5={2**5}") #2*2*2*2*2
