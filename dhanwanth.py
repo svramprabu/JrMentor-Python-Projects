@@ -23,8 +23,8 @@
 # age = input('Enter your age')
 # age = int(input('Enter your age'))
 
-a = 10
-b = 5
+# a = 10
+# b = 5
 
 # print(a+b)
 # print(a-b)
@@ -127,3 +127,19 @@ b = 5
 #     else:
 #         print('Try again')
 # print('You have been logged in successfully')
+
+# i = 1
+# while (i < 10):
+#     if (i == 4):
+#         break
+#     print(i)
+#     i += 1
+
+# saved_password = 'Dhan123'
+# while(True):
+#     user_password = input('Enter password: ')
+#     if (user_password == saved_password):
+#         print('Success')
+#         break
+#     else:
+#         print('Try again')

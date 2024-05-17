@@ -436,20 +436,50 @@
 
 # Dice simulator
 
-import random
-option = int(input('1.Roll 2.Exit'))
-while(True):
-    if(option == 1):
-        dice_output = random.randint(1,6)
-        print(f'You got {dice_output} after rollin gthe dice')
-    else:
-        print('Thank you for playing')
-        break
-    option = int(input('1.Roll 2. Exit'))
+# import random
+# option = int(input('1.Roll 2.Exit'))
+# while(True):
+#     if(option == 1):
+#         dice_output = random.randint(1,6)
+#         print(f'You got {dice_output} after rollin gthe dice')
+#     else:
+#         print('Thank you for playing')
+#         break
+#     option = int(input('1.Roll 2. Exit'))
+
+# f = open('filename.extension','processing mode')
+# f = open('python_programming.txt','w')
+# x = input('Enter: ')
+# f.write(x)
+# try:
+#     file_name = input('Enter file name: ')
+#     f = open(file_name)
+#     print(len(f.read(50)))
+#     f.close()
+# except:
+#     print('File is not found')
+
+# class myage:
+#     age=10
+#     print(age)
+
+# a = myage()
+
+# Inheritance
+# Polymorphism
+# Abstraction
+# Encapsulation
 
 
-
-
+class AgeError(Exception):
+    pass
+# try:
+age=int(input('Age: '))
+if age < 0:
+    raise AgeError
+print('Your age is',age)
+# except AgeError:
+#     print('File is not found')
 
 
 

@@ -182,3 +182,20 @@
 # print(com)
 # p =
 # while(True):
+
+class bird:
+    def flight(self):
+        print('Birds can fly')
+
+class sparrow(bird):
+    pass
+
+class ostritch(bird):
+    def flight(self):
+        print('Ostritch cannot fly')
+
+a = sparrow()
+a.flight()
+b = ostritch()
+b.flight()
+

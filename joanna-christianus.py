@@ -11,8 +11,8 @@
 
 # abc = 2344234
 # efg = 3242.66546
-question = "What is your name?" #to explain string data type
-str1="123456"
+# question = "What is your name?" #to explain string data type
+# str1="123456"
 
 # print(abc)
 # print(efg)
@@ -163,4 +163,59 @@ str1="123456"
 # print('a!=b',a!=b)
 # print('a>=b',a>=b)
 # print('a<=b',a<=b)
+
+# import random
+# option = int(input('Enter 1 to roll and 2 to exit: '))
+# while(option == 1):
+#     dice_output = random.randint(1,6)
+#     print(f"After rolling the dice you got {dice_output}")
+#
+#     option = int(input('Enter 1 to roll and 2 to exit'))
+
+# import random
+# game_inputs = ['r','p','s']
+# computer_choice = random.choice(game_inputs)
+# print(computer_choice)
+
+# from package_name import module_name
+
+# def car():
+#     print('skdjbf')
+# car()
+# print(car())
+
+# Type 2:
+# def bike():
+#     name = 'Yamaha'
+#     return name
+#
+# print(bike())
+#
+# def train(train_name):
+#     print(train_name)
+#
+# train('Chennai Express') #pass by value
+#
+# def flight(flight_no):
+#     return flight_no
+#
+# x = 1234
+# print(flight(x)) #pass by ref
+
+# def rps(p1,p2):
+#     if
+#         pr
+#
+#
+# player_mode = input('single/double')
+#
+# if single
+#     import
+#     computer
+#     player
+#     rps(comuter,player)
+# else
+#     p1
+#     p2
+#     rps(p1,p2)
 

@@ -71,4 +71,42 @@ c = "abcd"
 # print(a,end='$$$')
 # print()
 
+x = 11
+y = 2
+print('x+y=',x + y)
+a = 'Python'
+b = 'Programming'
+print('a+b=',a + b) #concatenation
+
+print('x-y=',x - y)
+print('x*y=',x * y)
+print('x/y=',x / y)
+print('x%y=',x % y) #remainder
+print('x//y=',x // y) #quotient
+
+# x = int(input('Enter a number: '))
+# y = int(input('Enter a number: '))
+# add = x + y
+# print('x+y=',add)
+
+# Take input from user collecting marks in different subject
+# 5 subjects
+# output total marks
+
+# print('Total marks',add,'in the mid term ')
+
+# n = input('Name: ')
+# a = int(input('age: '))
+# l = input('location: ')
+# print('Hi my name is',n,'I am ',a,'years old','I am from',l)
+# print(f"Hi my name is {n} I am {a} yeras old and I'm from {l}")
+
+
+
+
+
+
+
+
+
 

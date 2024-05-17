@@ -212,19 +212,54 @@
 #     print('Raksana')
 #     print(i)
 
-import random
-options = ['r','p','s']
-user_play=int(input('1.play 2.exit'))
-while(user_play == 1):
-    computer_option = random.choice(options)
-    player_option = input('Enter Rock (r) or Paper (p) or Scissor (s): ')
-
-    if (computer_option == 'p' and player_option == 'r'):
-        print('Computer won')
-    elif (computer_option =='r' and player_option == 'p'):
-        print('You won')
+# import random
+# options = ['r','p','s']
+# user_play=int(input('1.play 2.exit'))
+# while(user_play == 1):
+#     computer_option = random.choice(options)
+#     player_option = input('Enter Rock (r) or Paper (p) or Scissor (s): ')
+#
+#     if (computer_option == 'p' and player_option == 'r'):
+#         print('Computer won')
+#     elif (computer_option =='r' and player_option == 'p'):
+#         print('You won')
     # r s
     # s r
     # p s
     # s p
+
+# i = 1
+# while (i < 10):
+#     if (i == 4):
+#         break
+#     print(i)
+#     i+=1
+
+# Password checker program
+# stored_password = 'raks123'
+# while(True):
+#     user_password = input("Enter the password: ")
+#
+#     if (user_password == stored_password):
+#         print('Success')
+#         break
+#     else:
+#         print('Failure')
+
+w = 0
+stored_password = 'raks123'
+while(True):
+    user_password = input("Enter the password: ")
+
+    if (user_password == stored_password):
+        print('Success')
+        break
+    else:
+        w += 1
+        print(f'Failure with {w} wrong attempts')
+        if (w == 3):
+            print("You have exceeded the maximum attempts")
+            break
+
+
 
