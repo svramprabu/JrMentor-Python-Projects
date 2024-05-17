@@ -183,19 +183,85 @@
 # p =
 # while(True):
 
-class bird:
-    def flight(self):
-        print('Birds can fly')
+# class bird:
+#     def flight(self):
+#         print('Birds can fly')
+#
+# class sparrow(bird):
+#     pass
+#
+# class ostritch(bird):
+#     def flight(self):
+#         print('Ostritch cannot fly')
+#
+# a = sparrow()
+# a.flight()
+# b = ostritch()
+# b.flight()
 
-class sparrow(bird):
-    pass
+# Why class?
+# class int
+# print(type(123))
 
-class ostritch(bird):
-    def flight(self):
-        print('Ostritch cannot fly')
+# class
+# list = [1,2,3,4,5,6]
+# contiguous memory location
+# append
 
-a = sparrow()
-a.flight()
-b = ostritch()
-b.flight()
+# Linked List
+# space - data
+# space2 - address to the next data
+# flow always starts from first element
+# no reverse flow
+
+# class LinkedList:
+#     def __init__(self,data):
+#         self.data=data
+#         self.next=None
+#     def next(self,data,prev):
+#         self.data=data
+#         self.prev=data
+#
+# x = LinkedList(5)
+# next(6,5)
+
+# eg_dict = {key:value,key:value}
+# eg_dict = {1:'Vedansh','class':5}
+# print(eg_dict)
+# print(eg_dict['class'])
+
+# n = input('Name: ')
+# a = int(input('Age: '))
+#
+# details_dict = {}
+# details_dict['name']=n
+# details_dict['age']=a
+# print(details_dict)
+
+# def func(arg):
+#     if (123 % 2==0):
+#         return True
+#     else:
+#         return False
+#
+# x = func(123)
+# print(x)
+#
+# print(func(123))
+#
+# if (func(123)):
+#     print()
+
+import qrcode
+
+def gen_qr(data):
+    qr = qrcode.QRCode()
+    qr.make(data)
+    img=qr.make_image(fill_color='black',back_color='white')
+    img.save('qr_img.png')
+    return 'Generated'
+text = input('Enter the content: ')
+print(gen_qr(text))
+
+
 

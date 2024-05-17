@@ -47,9 +47,9 @@
 # sum = a+b
 # print(sum)
 
-a = 123
-b = 123.45
-c = "abcd"
+# a = 123
+# b = 123.45
+# c = "abcd"
 
 # print(a,b,c)
 
@@ -71,18 +71,18 @@ c = "abcd"
 # print(a,end='$$$')
 # print()
 
-x = 11
-y = 2
-print('x+y=',x + y)
-a = 'Python'
-b = 'Programming'
-print('a+b=',a + b) #concatenation
+# x = 11
+# y = 2
+# print('x+y=',x + y)
+# a = 'Python'
+# b = 'Programming'
+# print('a+b=',a + b) #concatenation
 
-print('x-y=',x - y)
-print('x*y=',x * y)
-print('x/y=',x / y)
-print('x%y=',x % y) #remainder
-print('x//y=',x // y) #quotient
+# print('x-y=',x - y)
+# print('x*y=',x * y)
+# print('x/y=',x / y)
+# print('x%y=',x % y) #remainder
+# print('x//y=',x // y) #quotient
 
 # x = int(input('Enter a number: '))
 # y = int(input('Enter a number: '))
@@ -100,6 +100,55 @@ print('x//y=',x // y) #quotient
 # l = input('location: ')
 # print('Hi my name is',n,'I am ',a,'years old','I am from',l)
 # print(f"Hi my name is {n} I am {a} yeras old and I'm from {l}")
+
+# > greater than
+# print('5 > 3 =',5>3)
+# print('3 > 5 =',3>5)
+
+# < less than
+# print('3 < 5 =',3<5)
+# print('5 < 3 =',5<3)
+
+# == value equals
+# print('3 == 3',3==3)
+# print('3 == 5',3==5)
+
+# != value not equals
+# print('3 != 5',3!=5)
+# print('3 != 3',3!=3)
+
+# >= greater than or equals
+# print('5 >= 3',5>=3)
+# print('5 >= 5',5>=5)
+# print('3 >= 5',3>=5)
+
+# <= lesser than or equals
+# print('3 <= 5',3<=5)
+# print('5 <= 5',5<=5)
+# print('5 <= 3',5<=3)
+
+# take input from the user asking for his/her birth year
+#     calculate the age using that and print a statement
+# that says "As your were born in 1994 your age is 30"
+
+# take 4 inputs
+# input 1 name and input 2 height
+# input 3 name and input 4 height
+# difference in heights
+# "person1 is taller than person2 by x cms"
+
+# name1 = input('Name of person 1: ')
+# name2 = input('Name of person 2: ')
+# height1 = float(input('Height of person 1: '))
+# height2 = float(input('Height of person 2: '))
+#
+# print(f'Difference between the heights of {name1} and {name2} is {height1-height2}')
+
+age = int(input('Age: '))
+print(f"Your age is {age>0}")
+
+
+
 
 
 

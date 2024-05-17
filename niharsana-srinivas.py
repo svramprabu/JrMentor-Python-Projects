@@ -37,5 +37,20 @@
 # print()
 # print(name,age,weight,sep='->')
 
+x = 11
+y = 2
+print('x+y=',x + y)
+a = 'Python'
+b = 'Programming'
+print('a+b=',a + b) #concatenation
+
+print('x-y=',x - y)
+print('x*y=',x * y)
+print('x/y=',x / y)
+print('x%y=',x % y) #remainder
+print('x//y=',x // y) #quotient
+print('x**y=',x ** y)
+
+
 
 
