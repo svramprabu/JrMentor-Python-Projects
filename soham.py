@@ -176,3 +176,61 @@
 #
 #     if
 #         ..
+
+# i = 1
+# while(i<10):
+#     if (i == 7):
+#         break
+#     print(i)
+#     i += 1
+
+# saved_password = 'soham123'
+# while(True):
+#     user_password = input('Enter password: ')
+#     if (user_password == saved_password):
+#         print('Success')
+#         break
+#     else:
+#         print('Try again')
+
+# saved_password = 'soham123'
+# count = 0
+# while(True):
+#     user_password = input('Enter password: ')
+#     if (user_password == saved_password):
+#         print('Success')
+#         break
+#     else:
+#         count += 1
+#         print(f'{count} wrong attempts made')
+#         if (count == 3):
+#             print('Sorry your attempts are over')
+#             break
+#         print('Try again')
+#         print()
+
+# i = 0
+# while(i<10):
+#     i += 1
+#     if (i == 5):
+#         continue
+#     print(i)
+
+saved_password = 'soham123'
+count = 0
+while(True):
+    user_password = input('Enter password: ')
+    if (user_password == saved_password):
+        print('Success')
+        break
+    else:
+        if ('soham' in user_password):
+            print('Your password is semi correct')
+            continue
+        count += 1
+        print(f'{count} wrong attempts made')
+        if (count == 3):
+            print('Sorry your attempts are over')
+            break
+        print('Try again')
+        print()

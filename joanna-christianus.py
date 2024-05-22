@@ -219,3 +219,8 @@
 #     p2
 #     rps(p1,p2)
 
+
+# f = open('sample.txt','w')
+with open('sample.txt','a') as f:
+    f.write('Type not here')
+

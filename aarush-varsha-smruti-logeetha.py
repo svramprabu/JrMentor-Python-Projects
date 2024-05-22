@@ -68,7 +68,7 @@
 a = 10
 # +=
 a += 10 # a = a+10
-print(a)
+# print(a)
 
 # Logical operators
 
@@ -76,23 +76,32 @@ print(a)
 # True 1
 # False 0
 
-print(True and True) #(1*1) True
-print(True and False) #False
-print(False and True) #False
-print(False and False) #False
+# print(True and True) #(1*1) True
+# print(True and False) #False
+# print(False and True) #False
+# print(False and False) #False
 
 # print(5>3 and 5>4) use case of logical operator
 
 # or (addition)
-print(True or True) #(1+1) True
-print(True or False) #True
-print(False or True) #True
-print(False or False) #False
+# print(True or True) #(1+1) True
+# print(True or False) #True
+# print(False or True) #True
+# print(False or False) #False
 
 # not
-print(not True) #False
-print(not False) #True
+# print(not True) #False
+# print(not False) #True
 
 # 0101011
 # 0010101
-print(5 & 3)
+# print(5 & 3)
+
+a=input('a=')
+b=input('b=')
+if (a>b):
+    print('a is greater than b')
+    print('if statement')
+else:
+    print('a is not greater than b')
+    print('else statement')
