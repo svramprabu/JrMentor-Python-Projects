@@ -35,35 +35,64 @@
 # print(max(eg_list)) #to find the maximum value in a list
 
 # > greater than
-print('5 > 3 =',5>3)
-print('3 > 5 =',3>5)
+# print('5 > 3 =',5>3)
+# print('3 > 5 =',3>5)
 
 # < less than
-print('3 < 5 =',3<5)
-print('5 < 3 =',5<3)
+# print('3 < 5 =',3<5)
+# print('5 < 3 =',5<3)
 
 # == value equals
-print('3 == 3',3==3)
-print('3 == 5',3==5)
+# print('3 == 3',3==3)
+# print('3 == 5',3==5)
 
 # != value not equals
-print('3 != 5',3!=5)
-print('3 != 3',3!=3)
+# print('3 != 5',3!=5)
+# print('3 != 3',3!=3)
 
 # >= greater than or equals
-print('5 >= 3',5>=3)
-print('5 >= 5',5>=5)
-print('3 >= 5',3>=5)
+# print('5 >= 3',5>=3)
+# print('5 >= 5',5>=5)
+# print('3 >= 5',3>=5)
 
 # <= lesser than or equals
-print('3 <= 5',3<=5)
-print('5 <= 5',5<=5)
-print('5 <= 3',5<=3)
+# print('3 <= 5',3<=5)
+# print('5 <= 5',5<=5)
+# print('5 <= 3',5<=3)
 
 # take input from the user asking for his/her birth year
 #     calculate the age using that and print a statement
 # that says "As your were born in 1994 your age is 30"
 
-# take two inputs both names
-# two more inputs storing the heights in cms as integers
-# say who is taller "person1 is taller than person2 by ___ cms"
+# Assignment operators
+a = 10
+# +=
+a += 10 # a = a+10
+print(a)
+
+# Logical operators
+
+# and (Multiplication)
+# True 1
+# False 0
+
+print(True and True) #(1*1) True
+print(True and False) #False
+print(False and True) #False
+print(False and False) #False
+
+# print(5>3 and 5>4) use case of logical operator
+
+# or (addition)
+print(True or True) #(1+1) True
+print(True or False) #True
+print(False or True) #True
+print(False or False) #False
+
+# not
+print(not True) #False
+print(not False) #True
+
+# 0101011
+# 0010101
+print(5 & 3)

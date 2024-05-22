@@ -246,20 +246,46 @@
 #     else:
 #         print('Failure')
 
-w = 0
-stored_password = 'raks123'
-while(True):
-    user_password = input("Enter the password: ")
+# w = 0
+# stored_password = 'raks123'
+# while(True):
+#     user_password = input("Enter the password: ")
+#
+#     if (user_password == stored_password):
+#         print('Success')
+#         break
+#     else:
+#         w += 1
+#         print(f'Failure with {w} wrong attempts')
+#         if (w == 3):
+#             print("You have exceeded the maximum attempts")
+#             break
 
-    if (user_password == stored_password):
+i = 0
+while (i < 10):
+    i += 1
+    if (i == 6):
+        continue
+    print(i)
+
+saved_password = 'Raksana123'
+count=0
+while(True):
+    user_password = input('Password: ')
+    if (user_password == saved_password):
         print('Success')
         break
+    elif ('Raksana' in user_password):
+        pass
+        # print('Your password is semi correct')
+        # continue
     else:
-        w += 1
-        print(f'Failure with {w} wrong attempts')
-        if (w == 3):
-            print("You have exceeded the maximum attempts")
-            break
+        count+=1
+        print('Try again')
+    print(f"You have used {count} attempts")
+
+
+
 
 
 
