@@ -143,3 +143,24 @@
 #         break
 #     else:
 #         print('Try again')
+
+# i = 0
+# while (i<10):
+#     i += 1 #taking eggs
+#     if (i ==6 ): #checking for spoiled eggs
+#         continue
+#     print(i) #labelling the aggs
+
+import random
+while (True):
+    user_option = int(input('1. Roll the Dice 2. Exit :'))
+    if (user_option == 1):
+        dice_no = random.randint(1,6)
+    elif (user_option == 2):
+        print('Thank you for playing')
+        break
+    else:
+        print('Invalid option')
+        continue
+    print(f"After rolling the dice you got {dice_no}")
+    print()

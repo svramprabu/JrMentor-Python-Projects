@@ -216,21 +216,56 @@
 #         continue
 #     print(i)
 
-saved_password = 'soham123'
-count = 0
-while(True):
-    user_password = input('Enter password: ')
-    if (user_password == saved_password):
-        print('Success')
-        break
-    else:
-        if ('soham' in user_password):
-            print('Your password is semi correct')
-            continue
-        count += 1
-        print(f'{count} wrong attempts made')
-        if (count == 3):
-            print('Sorry your attempts are over')
-            break
-        print('Try again')
-        print()
+# saved_password = 'soham123'
+# count = 0
+# while(True):
+#     user_password = input('Enter password: ')
+#     if (user_password == saved_password):
+#         print('Success')
+#         break
+#     else:
+#         if ('soham' in user_password):
+#             print('Your password is semi correct')
+#             continue
+#         count += 1
+#         print(f'{count} wrong attempts made')
+#         if (count == 3):
+#             print('Sorry your attempts are over')
+#             break
+#         print('Try again')
+#         print()
+
+# Type 1 function with no argument and no return
+# def func1():
+#     print('Hi from type 1 function')
+#
+# func1()
+
+# Type 2 function with no argument but returns a value
+# def func2():
+#     return "Hello"
+#
+# print(func2())
+
+# Type 3 function with no return value but argument
+# def func3(var):
+#     print(var)
+
+# func3(123) #pass by value
+
+# argument
+# pass by value
+# pass by ref
+
+# a = 5
+# func3(a) #pass by ref
+
+def add():
+    a=int(input('a='))
+    b=int(input('b='))
+    print(f"{a}+{b}={a+b}")
+
+def sub():
+    a = int(input('a='))
+    b = int(input('b='))
+

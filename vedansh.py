@@ -252,16 +252,32 @@
 # if (func(123)):
 #     print()
 
-import qrcode
+# import qrcode
 
-def gen_qr(data):
-    qr = qrcode.QRCode()
-    qr.make(data)
-    img=qr.make_image(fill_color='black',back_color='white')
-    img.save('qr_img.png')
-    return 'Generated'
-text = input('Enter the content: ')
-print(gen_qr(text))
+# def gen_qr(data):
+#     qr = qrcode.QRCode()
+#     qr.make(data)
+#     img=qr.make_image(fill_color='black',back_color='white')
+#     img.save('qr_img.png')
+#     return 'Generated'
+# text = input('Enter the content: ')
+# print(gen_qr(text))
+
+# List Tuple
+# []     ()
+(1,2,3,4,5)
+(1,23.5,'vedansh')
+my_tuple=('vedansh','Bansal')
+print(my_tuple[0])
+# Mutability
+my_list = ['Vedansh','Bansal']
+my_list[0]='Python'
+print(my_list)
+
+my_tuple = ('Vedansh','Bansal')
+# my_tuple[0]='Python'
+my_tuple = ('Python','Bansal')
+
 
 
 

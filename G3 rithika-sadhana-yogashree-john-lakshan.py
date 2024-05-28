@@ -144,12 +144,39 @@
 #
 # print(f'Difference between the heights of {name1} and {name2} is {height1-height2}')
 
-age = int(input('Age: '))
-print(f"Your age is {age>0}")
+# age = int(input('Age: '))
+# print(f"Your age is {age>0}")
+
+# a = 123
+
+# += Arithmetic and assignment -> compound operator
+# a += 10 # a+10 -> a = a+10
+# print(a)
+
+# count = 100
+# count -= 1 #count = count - 1
+
+# b = 13
+# b *= 3
+# print(b)
+#
+# a = 10
+# a //= 5
+
+if (5 > 3):
+    print('Five is greater than three')
+
+# declare two variables get input and check if first var is
+# greater than second and print something based on that
+
+a = int(input('a='))
+b = int(input('b='))
+if(a>b):
+    print('A is greater than B')
 
 
-
-
+# HW get the age of a person and your print if he's
+# eligible for voting
 
 
 

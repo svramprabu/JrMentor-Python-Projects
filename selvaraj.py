@@ -377,6 +377,10 @@
 #     print('File not found or file name error')
 
 
-def selva():
-    pass
-selva()
+# def selva():
+#     pass
+# selva()
+val=None
+print(val not in [0,1,2,3,4,5,6])
+my_list = [0,1,2,3,4,5,6,7,8]
+print('|'.join(['1','2','3']))
