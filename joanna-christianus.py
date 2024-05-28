@@ -221,6 +221,16 @@
 
 
 # f = open('sample.txt','w')
-with open('sample.txt','a') as f:
-    f.write('Type not here')
+# with open('sample.txt','a') as f:
+#     f.write('Type not here')
 
+class car:
+    print('BMW')
+
+# a = car()
+
+# OOPS
+# Inheritance
+# Abstraction
+# Encapsulation
+# Polymorphism

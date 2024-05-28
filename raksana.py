@@ -261,31 +261,97 @@
 #             print("You have exceeded the maximum attempts")
 #             break
 
-i = 0
-while (i < 10):
-    i += 1
-    if (i == 6):
-        continue
-    print(i)
+# i = 0
+# while (i < 10):
+#     i += 1
+#     if (i == 6):
+#         continue
+#     print(i)
+#
+# saved_password = 'Raksana123'
+# count=0
+# while(True):
+#     user_password = input('Password: ')
+#     if (user_password == saved_password):
+#         print('Success')
+#         break
+#     elif ('Raksana' in user_password):
+#         pass
+#         # print('Your password is semi correct')
+#         # continue
+#     else:
+#         count+=1
+#         print('Try again')
+#     print(f"You have used {count} attempts")
 
-saved_password = 'Raksana123'
-count=0
+
+# User Defined Function types
+# Type 1 no argument and no return value
+# def func1():
+#     print(5+3)
+
+# func1()
+
+# Type 2 no argument but a return value
+# def func2():
+#     return 5+5
+
+# a = func2()
+# print(a)
+
+# print(func2())
+
+# Type 3 with argument but no return value
+# a=15
+# def func3(a,b):
+#     print(a,b)
+#
+# func3(15,20)
+
+# Type 4 with both argument and return value
+# def func4(a):
+#     return (a)
+#
+# print(func4(25))
+
+# Calculator program using functions
+def add(): #type 1 no argument & no return value
+    a = int(input('a='))
+    b = int(input('b='))
+    print(f'{a}+{b}={a+b}')
+
+def sub(): #type 2 no argument with return value
+    a = int(input('a='))
+    b = int(input('b='))
+    return f"{a}-{b}={a - b}"
+
+def mul(a,b): #type 3 with argument and no return
+    print(f"{a}x{b}={a*b}")
+
+def div(a,b): #type 4 with argument and return value
+    return f"{a}/{b}={a/b}"
+
+print('Welcome to my calculator app')
 while(True):
-    user_password = input('Password: ')
-    if (user_password == saved_password):
-        print('Success')
+    user_option = int(input("1.add\n2.sub\n3.mul\n4.div\n5.exit\nEnter your desired option: "))
+    if (user_option == 1):
+        print('You chose addition function')
+        add()
+    elif (user_option == 2):
+        print("You chose Subtraction function")
+        print(sub())
+    elif (user_option == 3):
+        print("You chose Multiplication function")
+        a = int(input('a='))
+        b = int(input('b='))
+        mul(a,b)
+    elif(user_option == 4):
+        print("You chose Division function")
+        a = int(input('a='))
+        b = int(input('b='))
+        print(div(a,b))
+    elif(user_option == 5):
+        print('Thank you for using my calculator ')
         break
-    elif ('Raksana' in user_password):
-        pass
-        # print('Your password is semi correct')
-        # continue
     else:
-        count+=1
-        print('Try again')
-    print(f"You have used {count} attempts")
-
-
-
-
-
-
+        print("enter the correct option")
