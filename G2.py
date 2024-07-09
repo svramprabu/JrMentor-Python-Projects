@@ -450,8 +450,71 @@
 # while (condition):
 #     statement
 
-i = 5
-while (i < 15):
-    print(i)
-    i += 1
+# i = 5
+# while (i < 15):
+#     print(i)
+#     i += 1
 
+# start = 10
+# end = 25
+#
+# print("Using for loop")
+# for i in range(start,end):
+#     print(i)
+#
+# print("Using While loop")
+# i = start
+# while i < end:
+#     print(i)
+#     i += 1
+
+# saved_password = 'pass123'
+# user_password = ''
+# while(user_password != saved_password):
+#     user_password = input('Enter password: ')
+#     if (user_password == saved_password):
+#         print('Success')
+#     else:
+#         print("Try again")
+# print('You entered the right password')
+
+# import random
+# chosen_no = random.randint(1,100)
+# user_no = 0
+# print('The range is between 1 and 100')
+# while(user_no != chosen_no):
+#     user_no = int(input('Enter no: '))
+#     if (user_no > chosen_no):
+#         print('choose a smaller no')
+#     elif (user_no < chosen_no):
+#         print('choose a bigger no')
+#     else:
+#         print(f"you found the number as {user_no}")
+# print('Thank you for playing')
+
+num = int(input('Enter number: '))
+n = num
+digits=0
+sum_digits=0
+while (n>0):
+    print(n//10) #floor division
+    print(n%10) #modulo
+    sum_digits += n%10
+    digits += 1
+    n = n//10
+print(f'Number of digits in {num} is {digits}')
+print(f"sum of digits in {num} is {sum_digits}")
+
+# 151
+# 1 -> 1**3 -> 1
+# 5 -> 5**3 -> 125
+# 1 -> 1**3 -> 1
+# 1+125+1=127
+# not an armstrong
+#
+# 153
+# 1 -> 1
+# 5 -> 125
+# 3 -> 27
+#
+# 1+125+27 = 153
