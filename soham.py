@@ -260,12 +260,174 @@
 # a = 5
 # func3(a) #pass by ref
 
-def add():
-    a=int(input('a='))
-    b=int(input('b='))
-    print(f"{a}+{b}={a+b}")
+# def add(): #type 1 no argument no return
+#     a=int(input('a='))
+#     b=int(input('b='))
+#     addition = a+b
+#     print(f"{a}+{b}={addition}")
+#
+# def sub(): #type 2 no arguments but return
+#     a = int(input('a='))
+#     b = int(input('b='))
+#     subtraction = a-b
+#     return f"{a}-{b}={subtraction}"
+#
+# def mul(a,b): #type 3 no return but argument
+#     multiplication = a*b
+#     print(f"{a}*{b}={multiplication}")
+#
+# def div(a,b): #type 4 with arguments and return
+#     division = a / b
+#     return f"{a}/{b}={division}"
+#
+# print('Welcome to my Calculator app')
+# while(True):
+#     user_option = int(input('Enter \n1.add \n2.sub \n3.mul \n4.div \n5.exit\nyour choice: '))
+#     print()
+#     if (user_option == 1):
+#         print('You chose Addition feature')
+#         add()
+#     elif (user_option == 2):
+#         print('You chose Subtraction feature')
+#         print(sub())
+#     elif (user_option == 3):
+#         print('You chose Multiplication feature')
+#         a = int(input('a='))
+#         b = int(input('b='))
+#         mul(a,b)
+#     elif (user_option == 4):
+#         print('You chose Division feature')
+#         a = int(input('a='))
+#         b = int(input('b='))
+#         print(div(a,b))
+#     elif (user_option == 5):
+#         print('Thank you for using my app')
+#         break
+#     else:
+#         print('Invalid choice please choose again')
+#     print()
 
-def sub():
-    a = int(input('a='))
-    b = int(input('b='))
+# from soham_package import module1
+# module1.func()
+
+# Dice simulator
+# import random
+# print('Welcome to my Dice Simulator')
+# while(True):
+#     user_choice = int(input('1. Roll 2.Exit'))
+#     if (user_choice == 1):
+#         dice_output = random.randint(1,6)
+#         print(f'After rolling the dice you got a {dice_output}')
+#     else:
+#         print('thank you for rolling')
+#         break
+
+# import random
+# start_range = int(input('Enter the starting range: ')) #1
+# end_range = int(input('Enter the ending range: ')) #100
+#
+# chosen_number = random.randint(start_range,end_range) #43
+#
+# while(True):
+#     user_number = int(input("Enter the number: ")) #21 53 50 45 40 41 43
+#     if (user_number > chosen_number):
+#         print('Enter a smaller number')
+#     elif (user_number < chosen_number):
+#         print('Enter a bigger number')
+#     else:
+#         print(f"You found the number {user_number}")
+#         break
+
+# def add_task(t):
+#     if t not in tasks:
+#         tasks.append(t)
+#         return "Task added successfully\n"
+#     else:
+#         return "Task already present\n"
+#
+# def del_task(t):
+#     if t in tasks:
+#         tasks.remove(t)
+#         return "Task Removed successfully\n"
+#     else:
+#         return "Task not present\n"
+#
+# def view_tasks():
+#     print('\nTasks in your schedule are:')
+#     for each_task in tasks:
+#         print(f"- {each_task}")
+#     print()
+#
+# def total_tasks():
+#     return f'Total number of tasks available: {len(tasks)}\n'
+#
+# def search_task(t):
+#     if t in tasks:
+#         return True
+#     return False
+#
+# tasks = []
+# print("Welcome to my Task Manager Application")
+#
+# while(True):
+#     user_option = int(input('1.Add a task\n2.Delete a task\n3.View all tasks\n4.Number of tasks\n5.Search\nYour choice here: '))
+#     if (user_option == 1):
+#         task = input('Enter the task: ')
+#         print(add_task(task))
+#     elif (user_option == 2):
+#         task = input('Enter the task to be deleted: ')
+#         print(del_task(task))
+#     elif (user_option == 3):
+#         view_tasks()
+#     elif (user_option == 4):
+#         print(total_tasks())
+#     elif (user_option == 5):
+#         task = input('Enter the task to search: ')
+#         print(search_task(task))
+
+
+# File operations
+# Read Write Open Close
+
+# open(file name, processing mode)
+# f = open('soham.txt','w') # r - open if already present(default) w- also create  a- append data
+# f.write("Hi soham")
+# f.close()
+# f = open('soham.txt','a') # r - open if already present(default) w- also create  a- append data
+# f.write(" appending text")
+# f.close()
+# f = open('soham.txt')
+# print(f.read())
+
+
+# my_dict={'name':'Soham'}
+# print(my_dict['names']) #KeyError
+#
+# my_list = [23,45,66,88,58]
+# my_list.remove(45)
+# my_list.remove(45) #ValueError
+# print(my_list)
+# my_list.delete(66) #AttributeError
+# print(my_tuple) #NameError
+a = 45 #int
+b = '35' #str
+# add = a+b
+# print(add) #TypeError
+
+# r
+# R
+# Rock
+class NewError(Exception):
+    pass
+
+my_list = [23,45,66,88,58]
+my_list.remove(45)
+try:
+    if 45 not in my_list:
+        raise NewError
+    my_list.remove(45)
+    print('Removed successfully')
+except NewError:
+    print('Item already removed')
+print(my_list)
 

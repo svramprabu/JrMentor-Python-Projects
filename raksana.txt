@@ -1,0 +1,1 @@
+Hi, my name is Raksana from Python class I am appending to the text file

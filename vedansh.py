@@ -265,19 +265,48 @@
 
 # List Tuple
 # []     ()
-(1,2,3,4,5)
-(1,23.5,'vedansh')
-my_tuple=('vedansh','Bansal')
-print(my_tuple[0])
-# Mutability
-my_list = ['Vedansh','Bansal']
-my_list[0]='Python'
-print(my_list)
+# (1,2,3,4,5)
+# (1,23.5,'vedansh')
+# my_tuple=('vedansh','Bansal')
+# print(my_tuple[0])
+# # Mutability
+# my_list = ['Vedansh','Bansal']
+# my_list[0]='Python'
+# print(my_list)
+#
+# my_tuple = ('Vedansh','Bansal')
+# # my_tuple[0]='Python'
+# my_tuple = ('Python','Bansal')
 
-my_tuple = ('Vedansh','Bansal')
-# my_tuple[0]='Python'
-my_tuple = ('Python','Bansal')
 
+import numpy as np
+
+# Creating nd array
+
+# arr0 = np.array(12) #0 dimentional array
+# print(arr0)
+#
+# arr1 = np.array([34,56,234,4545]) #1 dimentional array
+# print(arr1)
+#
+# arr2 = np.array([[1,2,3],[4,5,6]]) #2 dimentional array
+# print(arr2)
+#
+# arr3 = np.array([[[1,2],[3,4]],[[5,6],[7,8]]]) #3 dimentional array
+# print(arr3)
+#
+# arr = np.array([1,2,3,4,5],ndmin=5)
+# print(arr)
+
+# nd array indexing
+
+arr = np.array([1,2,3,4,5])
+print(arr[0])
+
+arr = np.array([[1,2,3,4],[5,6,7,8]])
+print(arr[1][3])
+
+arr = np.array([['apple','banana'],['brinjal','cabbage']])
 
 
 

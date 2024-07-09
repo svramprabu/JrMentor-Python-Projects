@@ -151,16 +151,55 @@
 #         continue
 #     print(i) #labelling the aggs
 
-import random
-while (True):
-    user_option = int(input('1. Roll the Dice 2. Exit :'))
-    if (user_option == 1):
-        dice_no = random.randint(1,6)
-    elif (user_option == 2):
-        print('Thank you for playing')
-        break
-    else:
-        print('Invalid option')
-        continue
-    print(f"After rolling the dice you got {dice_no}")
-    print()
+# def dice_roll():
+#     import random
+#     while (True):
+#         user_option = int(input('1. Roll the Dice 2. Exit :'))
+#         if (user_option == 1):
+#             dice_no = random.randint(1,6)
+#         elif (user_option == 2):
+#             print('Thank you for playing')
+#             break
+#         else:
+#             print('Invalid option')
+#             continue
+#         print(f"After rolling the dice you got {dice_no}")
+#         print()
+
+# def example_function():
+#     print('Dhanwanth is from Python Class')
+#
+# example_function() #function calling user defined
+# print() #built in function
+
+#    arguments     return
+# 1       0           0
+# 2       0           1
+# 3       1           0
+# 4       1           1
+
+
+def add():
+    a = 10
+    b = 15
+    print(a+b)
+
+add()
+
+def sub():
+    a = 10
+    b = 15
+    return b-a
+
+print(sub())
+
+def mul(a,b):
+    print(a*b)
+
+mul(10,2)
+
+def div(a,b):
+    return a/b
+
+print(div(10,2))
+

@@ -224,8 +224,8 @@
 # with open('sample.txt','a') as f:
 #     f.write('Type not here')
 
-class car:
-    print('BMW')
+# class car:
+#     print('BMW')
 
 # a = car()
 
@@ -234,3 +234,116 @@ class car:
 # Abstraction
 # Encapsulation
 # Polymorphism
+
+# class Grandfather:
+#     def __init__(self,grandpa):
+#         # print(f'My name is {grandpa}')
+#         self.grandpaname = grandpa
+# x = Grandfather('Ram')
+
+# 2 players
+# 1 human player
+# 1 computer player
+# 1 st move always human
+# human always chooses X
+
+# list of boxes
+# board printing
+# number board printing
+# moves available
+# winner
+
+import random
+board = []
+for i in range(9):
+    board.append(' ')
+
+board_pos = []
+for i in range(9):
+    board_pos.append(str(i))
+
+print('Positions can be chosen as shown below:')
+
+for i in range(0,3):
+    print('|',' | '.join(board_pos[i*3:(i+1)*3]),'|')
+
+while(True):
+    human_input = int(input('Enter position to fill: '))
+    if (board[human_input] == ' '):
+        board[human_input]='X'
+    else:
+        print('Choose another')
+        continue
+    if (human_input % 2 == 1):
+        if (human_input == 1):
+            if (board[0]==board[1] and board[1]==board[2]):
+                print('Human player won')
+                break
+            elif (board[1]==board[4] and board[4]==board[7]):
+                print('Human player won')
+                break
+        elif (human_input == 3):
+            pass
+        elif (human_input == 5):
+            pass
+        else:
+            pass
+
+    else:
+        row_ind =  human_input // 3
+        val_in_row = board[row_ind*3:(row_ind+1)*3] #board[0:3]
+        count=0
+        for each in val_in_row:
+            if each == 'X':
+                count += 1
+        if (count == 3):
+            print('Human player won')
+            break
+
+        col_ind = human_input % 3
+        val_in_col=[]
+        for i in range(3):
+            val_in_col.append(board[col_ind+ i*3])
+        count = 0
+        for each in val_in_col:
+            if each == 'X':
+                count += 1
+        if (count == 3):
+            print('Human player won')
+            break
+
+
+        diagonal1 =[]
+        for i in [0,4,8]:
+            diagonal1.append(board[i])
+        count = 0
+        for each in diagonal1:
+            if each == 'X':
+                count += 1
+        if (count == 3):
+            print('Human player won')
+            break
+
+        diagonal2 = []
+        for i in [2, 4, 6]:
+            diagonal2.append(board[i])
+        count = 0
+        for each in diagonal2:
+            if each == 'X':
+                count += 1
+        if (count == 3):
+            print('Human player won')
+            break
+
+    available_moves = []
+    for each,index in enumerate(board):
+        if each == ' ':
+            available_moves.append(index)
+
+    computer_input = random.choice(available_moves)
+
+
+
+
+
+

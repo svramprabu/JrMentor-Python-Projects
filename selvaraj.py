@@ -380,7 +380,48 @@
 # def selva():
 #     pass
 # selva()
-val=None
-print(val not in [0,1,2,3,4,5,6])
-my_list = [0,1,2,3,4,5,6,7,8]
-print('|'.join(['1','2','3']))
+# val=None
+# print(val not in [0,1,2,3,4,5,6])
+# my_list = [0,1,2,3,4,5,6,7,8]
+# print('|'.join(['1','2','3']))
+
+# class tester:
+#
+#     def name_printer(self,name):
+#         self.name = name
+#         print(self.name)
+#
+# name = input('NAme: ')
+# a = tester()
+# a.name_printer(name)
+# # a.__init__()
+
+# class mine:
+#     name='Someone'
+#     def my_name(self):
+#         print(self.name)
+#
+# for i in range(3):
+#     x = mine()
+#     x.name=input('Name: ')
+#     x.my_name()
+
+
+class tester:
+
+    def name_printer(self,name):
+        self.name = name
+        print(self.name)
+
+
+s1 = tester()
+s1.name_printer('Selvaraj')
+
+class tester1:
+    def __init__(self,name):
+        self.name = name
+        print(self.name)
+
+
+
+s2 = tester1('selvaraj')

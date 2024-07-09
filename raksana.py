@@ -315,43 +315,103 @@
 # print(func4(25))
 
 # Calculator program using functions
-def add(): #type 1 no argument & no return value
-    a = int(input('a='))
-    b = int(input('b='))
-    print(f'{a}+{b}={a+b}')
+# def add(): #type 1 no argument & no return value
+#     a = int(input('a='))
+#     b = int(input('b='))
+#     print(f'{a}+{b}={a+b}')
+#
+# def sub(): #type 2 no argument with return value
+#     a = int(input('a='))
+#     b = int(input('b='))
+#     return f"{a}-{b}={a - b}"
+#
+# def mul(a,b): #type 3 with argument and no return
+#     print(f"{a}x{b}={a*b}")
+#
+# def div(a,b): #type 4 with argument and return value
+#     return f"{a}/{b}={a/b}"
 
-def sub(): #type 2 no argument with return value
-    a = int(input('a='))
-    b = int(input('b='))
-    return f"{a}-{b}={a - b}"
+# print('Welcome to my calculator app')
+# while(True):
+#     user_option = int(input("1.add\n2.sub\n3.mul\n4.div\n5.exit\nEnter your desired option: "))
+#     if (user_option == 1):
+#         print('You chose addition function')
+#         add()
+#     elif (user_option == 2):
+#         print("You chose Subtraction function")
+#         print(sub())
+#     elif (user_option == 3):
+#         print("You chose Multiplication function")
+#         a = int(input('a='))
+#         b = int(input('b='))
+#         mul(a,b)
+#     elif(user_option == 4):
+#         print("You chose Division function")
+#         a = int(input('a='))
+#         b = int(input('b='))
+#         print(div(a,b))
+#     elif(user_option == 5):
+#         print('Thank you for using my calculator ')
+#         break
+#     else:
+#         print("enter the correct option")
 
-def mul(a,b): #type 3 with argument and no return
-    print(f"{a}x{b}={a*b}")
+# def rps(p1,p2):
+#     if (p1 == 'r' and p2=='p'):
+#         print('player 2 wins')
+#     elif (p1 == 'p' and p2=='r'):
+#         print('player 1 wins')
+#     elif (p1 == 'p' and p2=='s'):
+#         print('player 2 wins')
+#     elif (p1 == 's' and p2=='p'):
+#         print('player 1 wins')
+#     elif (p1 == 's' and p2=='r'):
+#         print('player 2 wins')
+#     elif (p1 == 'r' and p2=='s'):
+#         print('player 1 wins')
+#     elif (p1 == p2): #p p r r s s
+#         print('It is a Tie')
+#     else:
+#         print('Invalid Input')
+#
+# print('Welcome to Rock paper scissors game\n')
+# game_mode = int(input('1.Single player \n2.Double player \nEnter game mode '))
+# if (game_mode == 1):
+#     import random
+#     Human_user = input('Enter Rock(r) or Paper(p) or Scissors(s): ').lower()
+#     Computer_user = random.choice(['r','p','s'])
+#     print(f"Computer chose {Computer_user}")
+#     rps(Human_user,Computer_user)
+# elif (game_mode == 2):
+#     player_1 = input('Enter Rock(r) or Paper(p) or Scissors(s): ').lower()
+#     player_2 = input('Enter Rock(r) or Paper(p) or Scissors(s): ').lower()
+#     rps(player_1,player_2)
 
-def div(a,b): #type 4 with argument and return value
-    return f"{a}/{b}={a/b}"
+# from new_package import module1
+# module1.func()
 
-print('Welcome to my calculator app')
-while(True):
-    user_option = int(input("1.add\n2.sub\n3.mul\n4.div\n5.exit\nEnter your desired option: "))
-    if (user_option == 1):
-        print('You chose addition function')
-        add()
-    elif (user_option == 2):
-        print("You chose Subtraction function")
-        print(sub())
-    elif (user_option == 3):
-        print("You chose Multiplication function")
-        a = int(input('a='))
-        b = int(input('b='))
-        mul(a,b)
-    elif(user_option == 4):
-        print("You chose Division function")
-        a = int(input('a='))
-        b = int(input('b='))
-        print(div(a,b))
-    elif(user_option == 5):
-        print('Thank you for using my calculator ')
-        break
-    else:
-        print("enter the correct option")
+# import random
+# chosen_number = random.randint(1,100)
+# print('I have a number in mind can you find it????')
+# while(True):
+#     user_number = int(input('Find the number: '))
+#     if user_number > chosen_number:
+#         print('Enter a smaller number')
+#     elif user_number < chosen_number:
+#         print('Enter a bigger number')
+#     else:
+#         print('You found the number chosen by computer')
+#         break
+# print('Thank you for playing with me')
+
+f = open('raksana.txt','w')
+f.write('Hi, my name is Raksana from Python class')
+f.close()
+
+f = open('raksana.txt','a')
+f.write(' I am appending to the text file')
+f.close()
+
+f = open('raksana.txt')
+print(f.read())
+
