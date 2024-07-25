@@ -492,18 +492,18 @@
 #         print(f"you found the number as {user_no}")
 # print('Thank you for playing')
 
-num = int(input('Enter number: '))
-n = num
-digits=0
-sum_digits=0
-while (n>0):
-    print(n//10) #floor division
-    print(n%10) #modulo
-    sum_digits += n%10
-    digits += 1
-    n = n//10
-print(f'Number of digits in {num} is {digits}')
-print(f"sum of digits in {num} is {sum_digits}")
+# num = int(input('Enter number: '))
+# n = num
+# digits=0
+# sum_digits=0
+# while (n>0):
+#     print(n//10) #floor division
+#     print(n%10) #modulo
+#     sum_digits += n%10
+#     digits += 1
+#     n = n//10
+# print(f'Number of digits in {num} is {digits}')
+# print(f"sum of digits in {num} is {sum_digits}")
 
 # 151
 # 1 -> 1**3 -> 1
@@ -518,3 +518,179 @@ print(f"sum of digits in {num} is {sum_digits}")
 # 3 -> 27
 #
 # 1+125+27 = 153
+
+
+# Break
+
+# i = 0
+# while (i < 10):
+#     print(i)
+#     if (i == 4):
+#         break
+#     i+=1
+
+# saved_password = 'pass123'
+# while(True):
+#     user_password = input('Enter password: ')
+#     if (user_password == saved_password):
+#         print('Success')
+#         break
+#     else:
+#         print("Try again")
+# print('You entered the right password')
+
+# continue
+
+# i = 0
+# while(i<10):
+#     i+= 1
+#     if (i == 6):
+#         continue
+#     print(i)
+
+# saved_password = 'pass123'
+# while(True):
+#     user_password = input('Enter password: ')
+#     if (user_password == saved_password):
+#         print('Success')
+#         break
+#     else:
+#         if ('pass' in user_password):
+#             print('Semi correct')
+#             continue
+#         print("Try again")
+# print('You entered the right password')
+
+# task-manger.py
+
+# list_of_tasks =[]
+#
+# print("Welcome to my Task manager Application")
+# while(True):
+#     user_option = int(input('\n1.Add a task'
+#                             '\n2.Remove a task'
+#                             '\n3.Search for a task'
+#                             '\n4.Print all tasks'
+#                             '\n5.Number of tasks'
+#                             '\n0.Exit'
+#                             '\nEnter Option: '))
+#     if user_option == 1:
+#         print('Lets add a task')
+#         task = input('Enter task name: ')
+#         if task not in list_of_tasks:
+#             list_of_tasks.append(task)
+#             print('Task added successfully')
+#         else:
+#             print('Task already in list')
+#     elif user_option == 2:
+#         print('Lets remove a task')
+#         task = input('Enter task name: ')
+#         if task in list_of_tasks:
+#             list_of_tasks.remove(task)
+#             print('Task removed successfully')
+#         else:
+#             print('Task not found in list')
+#     elif user_option == 3:
+#         print('Lets search for a task')
+#         task = input('Enter task name: ')
+#         if task in list_of_tasks:
+#             print("Task found")
+#         else:
+#             print("Task not found")
+#     elif user_option == 4:
+#         print('\nAvailable tasks are')
+#         for each_task in list_of_tasks:
+#             print(f"-> {each_task}")
+#     elif user_option == 5:
+#         print(f"Number of tasks available are {len(list_of_tasks)}")
+#     elif user_option == 0:
+#         print('Thank you for using my application')
+#         break
+#     else:
+#         print("Invalid Option")
+
+# Type 1 no argument and no return
+# def addition():
+#     a = 10
+#     b = 20
+#     add = a+b
+#     print(f'Addition of {a} and {b} is {add}')
+
+# addition()
+# print(addition())
+# x = input('Name?')
+# print(x)
+
+# print(input('age?'))
+
+# Type 2 no argument but return a value
+# def func2():
+#     b = 45
+#     return b
+
+# print(func2())
+
+# Type 3 no return but has argument
+
+# def func3(num):
+#     print(f"Number is {num}")
+
+# func3(50) #pass by value
+# s = 50
+# func3(s) #pass by reference
+
+# Tyoe 4
+# def func4(name):
+#     return f"Owner name is {name.upper()}"
+#
+# print(func4('ramprabu'))
+
+# functions.py
+# def oddeven():
+#     n = int(input('Enter num: '))
+#     if (n % 2 == 0):
+#         print(f'{n} is Even')
+#     else:
+#         print(f'{n} is Odd')
+# oddeven()
+
+# calculator.py
+
+def add(): #type 1
+    a = int(input('a='))
+    b = int(input('b='))
+    add = a + b
+    print(f"Addition of {a} and {b} is {add}")
+def sub(): #type 2
+    a = int(input('a='))
+    b = int(input('b='))
+    sub = a - b
+    return (f"Subtraction of {a} and {b} is {sub}")
+def mul(a,b): #type 3
+    mul = a * b
+    print(f"Multiplication of {a} and {b} is {mul}")
+
+def div(a,b): #type 4
+    div = a / b
+    return(f"Division of {a} and {b} is {div}")
+
+print("Welcome to my calculator program")
+while True:
+    user_option = int(input('\n1.Addition\n2.Subtraction'
+                            '\n3.Multiplication\n4.Division'
+                            '\nOption:'))
+    if (user_option == 1):
+        print('You chose Addition')
+        add()
+    elif user_option == 2:
+        print('You chose Subtraction')
+        print(sub())
+    elif user_option == 3:
+        print("You chose Multiplication")
+        mul()
+    elif user_option == 4:
+        print('You chose Division')
+        print(div())
+    else:
+        print('Thank you, Bye')
+        break

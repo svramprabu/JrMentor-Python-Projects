@@ -155,3 +155,17 @@
 # else:
 #     print('Does not belong in school')
 
+# Acronym Generator
+# United states US
+user_input = input('Enter the expanded form: ').split()
+acronym = ''
+for each_word in user_input:
+    acronym += each_word[0]
+print(f'The acronym is {acronym}')
+
+# paragraph = input('Enter paragraph: ') #getting input
+# words = paragraph.split() #splitting word by word
+# count = 0
+# for word in words:
+#     count += 1 #count+1 -> count = new value
+# print('Number of words in the paragraph are',count)

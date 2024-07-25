@@ -438,60 +438,63 @@
 
 # Task manager application
 
-def addTask():
-    print('Lets add a task')
-    task = input('Task name: ')
-    if task in list_of_tasks:
-        print('Task already present\n')
-
-    else:
-        list_of_tasks.append(task)
-        print('Task added successfully\n')
-
-def remTask():
-    print('To delete a task')
-    task = input('Enter the task name: ')
-    if task in list_of_tasks:
-        list_of_tasks.remove(task)
-        return ('Task deleted successfully\n')
-    else:
-        return ('Task is not present in the list\n')
+# def searchTask(task):
+#     if task in list_of_tasks:
+#         return True
+#     return False
+# def addTask(task):
+#     if searchTask(task):
+#         return ('Task already present\n')
+#     list_of_tasks.append(task)
+#     return ('Task added successfully\n')
+#
+# def remTask(task):
+#     if searchTask(task):
+#         list_of_tasks.remove(task)
+#         return ('Task deleted successfully\n')
+#     return ('Task is not present in the list\n')
 
 
-print('Welcome to my task manager application')
-list_of_tasks = []
 
-while(True):
-    user_option = int(input('1.Add a task\n'
-                            '2.Remove a task\n'
-                            '3.Search\n'
-                            '4.Print\n'
-                            '5.Number of tasks\n'
-                            '6.Exit\n'
-                            'Choice: '))
-    if (user_option == 1):
-        addTask()
-    elif(user_option == 2):
-        print(remTask())
-    elif (user_option == 3):
-        task = input('Enter task to search: ')
-        print('Searching....')
-        if task in list_of_tasks:
-            print('Task found\n')
-        else:
-            print('Task not found\n')
-    elif (user_option == 4):
-        print('Tasks available are')
-        for each in list_of_tasks:
-            print(f"- {each}")
-        print()
-    elif (user_option == 5):
-        print(f"The number of tasks: {len(list_of_tasks)}\n")
-    elif (user_option == 6):
-        print('Thank you for using my application')
-        break
-    else:
-        print('Invalid input')
+# print('Welcome to my task manager application')
+# list_of_tasks = []
+#
+# while(True):
+#     user_option = int(input('1.Add a task\n'
+#                             '2.Remove a task\n'
+#                             '3.Search\n'
+#                             '4.Print\n'
+#                             '5.Number of tasks\n'
+#                             '6.Exit\n'
+#                             'Choice: '))
+#     if (user_option == 1):
+#         print('Lets add a task')
+#         task = input('Task name: ')
+#         print(addTask(task))
+#     elif(user_option == 2):
+#         print('To delete a task')
+#         task = input('Enter the task name: ')
+#         print(remTask(task))
+#     elif (user_option == 3):
+#         task = input('Enter task to search: ')
+#         print('Searching....')
+#         if searchTask(task):
+#             print('Task found\n')
+#         else:
+#             print('Task not found\n')
+#
+#     elif (user_option == 4):
+#         print('Tasks available are')
+#         for each in list_of_tasks:
+#             print(f"- {each}")
+#         print()
+#     elif (user_option == 5):
+#         print(f"The number of tasks: {len(list_of_tasks)}\n")
+#     elif (user_option == 6):
+#         print('Thank you for using my application')
+#         break
+#     else:
+#         print('Invalid input')
 
 # def function(): #parameters or arguments
 #     print('Hiiiii')
@@ -547,9 +550,44 @@ while(True):
 
 # Type 4 both argument n return are present
 
-def func4(x,y):
-    return x*y
+# def func4(x,y):
+#     return x*y
+#
+# print(func4(5,4))
 
-print(func4(5,4))
 
+# {
+#     'key':'value'
+# }
+# my_dict = {'name':'svr','age':30}
+# print(my_dict)
+# print(my_dict['name'])
 
+# file = open('g3.txt')
+# file = open('g3.txt','w')
+# file.write("Hi from Python G3 ")
+# file.close()
+# file = open('g3.txt','a')
+# file.write("Appending more data")
+# file1 = open('g3.txt','x')
+# file.close()
+
+# file = open('g3.txt')
+# print(file.read())
+# file.close()
+
+# with open('g3.txt','w') as file:
+#     file.write('Hiii')
+#     file.close()
+
+# import re
+# s = "all are wall"
+# res = re.findall('all',s)
+# print(res)
+
+import re
+s = "we are learning Python"
+res = re.search('Py',s)
+print(res.start())
+print(res.end())
+print(s[res.start():res.end()])

@@ -216,15 +216,111 @@ b = 15 #rooms
 # *     *
 # * * * *
 
-n = 5
-for i in range(n):
-    if ((i == 0) | (i == n-1)):
-        for j in range(n):
-            print('* ',end='')
-    else:
-        print('* ',end='')
-        for j in range(n-2):
-            print('  ',end='')
-        print('*',end='')
-    print()
+# n = 5
+# for i in range(n):
+#     if ((i == 0) | (i == n-1)):
+#         for j in range(n):
+#             print('* ',end='')
+#     else:
+#         print('* ',end='')
+#         for j in range(n-2):
+#             print('  ',end='')
+#         print('*',end='')
+#     print()
 
+# def searchTask(task):
+#     if task in list_of_tasks:
+#         return True
+#     return False
+# def addTask(task):
+#     if not searchTask(task):
+#         list_of_tasks.append(task)
+#         return "Task added Successfully"
+#     return "Task is a Duplicate"
+#
+# def removeTask(task):
+#     if searchTask(task):
+#         list_of_tasks.remove(task)
+#         return "Task Removed Successfully"
+#     return "Task not found"
+#
+#
+#
+# print('Welcome to my task manager application')
+# list_of_tasks = []
+# while(True):
+#     user_option = input('\nChoose an option from below\n'
+#                         'Add\n'
+#                         'Remove\n'
+#                         'Search\n'
+#                         'NumTasks\n'
+#                         'Tasks\n'
+#                         'Option: ').lower() #ADD Add add
+#     if (user_option == 'add'):
+#         task = input('Enter the name of the task to be added: ').lower()
+#         print(addTask(task))
+#     elif (user_option == 'remove'):
+#         task = input('Enter the name of the task to be removed: ').lower()
+#         print(removeTask(task))
+#     elif (user_option == 'search'):
+#         task = input('Enter the name of the task to be searched: ').lower()
+#         if searchTask(task):
+#             print('Task found')
+#         else:
+#             print('Task not found')
+#     elif (user_option == 'numtasks'):
+#         print(f"There are {len(list_of_tasks)} tasks to be done\n")
+#     elif (user_option == 'tasks'):
+#         print('\nAvailable tasks are')
+#         for each_task in list_of_tasks:
+#             print(f"-> {each_task}")
+
+# Calculator.py
+
+# def add(): #type 1
+#     a = int(input('a='))
+#     b = int(input('b='))
+#     add = a+b
+#     print(f'Addition of {a} and {b} is {add}')
+# def sub(): #type 2
+#     a = int(input('a='))
+#     b = int(input('b='))
+#     sub = a - b
+#     return (f'Subtraction of {a} and {b} is {sub}')
+# def mul(a,b): #type 3
+#     mul = a * b
+#     print(f'Multiplication of {a} and {b} is {mul}')
+# def div(a,b): #type 4
+#     div = a / b
+#     return (f'Multiplication of {a} and {b} is {div}')
+
+# print('Welcome to my calculator app')
+# while True:
+#     options = input('Choose an Operation to carry (+,-,*,/): ')
+#     if options == '+':
+#         add()
+#     elif options == '-':
+#         print(sub())
+#     elif options =='*':
+#         a = int(input('a='))
+#         b = int(input('b='))
+#         mul(a,b)
+#     elif options == '/':
+#         a = int(input('a='))
+#         b = int(input('b='))
+#         print(div(a,b))
+#     else:
+#         print("Thank you")
+#         break
+
+# open
+# close
+# read
+# write
+
+# open
+# filename
+# processing mode 4+2
+# file = open('rohan.txt','w')
+# file = open('rohan.txt','x')
+# file = open('rohan.txt','a')

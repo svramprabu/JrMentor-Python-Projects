@@ -381,6 +381,7 @@
 # r r
 # p p
 
+
 # p1 = input('Choose Rock(r) or Paper(p) or Scissors(s): ').lower()[0]
 # p2 = input('Choose Rock(r) or Paper(p) or Scissors(s): ').lower()[0]
 #
@@ -476,6 +477,262 @@
 # 2 x 2 = 4
 # 3 x 2 = 6
 # ...
-table_no = int(input('Enter table no: '))
-for i in range(1,11):
-    print(f"{i} X {table_no} = {i * table_no}")
+# table_no = int(input('Enter table no: '))
+# for i in range(1,11):
+#     print(f"{i} X {table_no} = {i * table_no}")
+
+# Print all odd number 1 - 100
+# for num in range(1,100):
+#     if (num % 2 == 1):
+#         print(f"{num} is odd")
+
+# for num in range(1,100):
+#     if (num % 2 == 0):
+#         print(f"{num} is Even")
+
+# start = int(input('start='))
+# end = int(input('end='))
+# answer = 0
+# for num in range(start,end):
+#     answer += num
+# print(f"sum of number from {start} to {end} is {answer}")
+
+# sum of digits and no of digits
+# num = 12314152535
+# str_num = str(num)
+# no_of_digits = 0
+# sum_of_digits = 0 #int
+# for each in str_num:
+#     no_of_digits += 1
+#     sum_of_digits += int(each)
+# print(f"Sum of Digits of {num}: {sum_of_digits}")
+# print(f"No of Digits of {num}: {no_of_digits}")
+
+
+# num_list = [12,56,34,23,67,89]
+# list_sum = 0
+# for each_num in num_list:
+#     list_sum += each_num
+# print("Sum of number in the list: ",list_sum)
+#
+# num_list = [37,58,28,49,93,84]
+# list_sum = 0
+# for index in range(len(num_list)):
+#     list_sum += num_list[index] #num_list[0]
+# print("Sum of number in the list: ",list_sum)
+
+# while condition:
+#     Statement
+
+# i = 0
+# while (i < 10):
+#     print(i)
+#     i += 1
+
+# i = 1
+# while ( i < 100):
+#     if (i%2==0):
+#         print(f"{i} is even")
+#     else:
+#         print(f"{i} is odd")
+#     i += 1
+
+# saved_password = "pass123"
+# user_password = ''
+# while (user_password != saved_password):
+#     user_password = input('Enter password: ')
+#     if (user_password == saved_password):
+#         print("Success")
+#     else:
+#         print("Try again")
+
+# Number Guessing game
+# import random
+#
+# print("Welcome to my number guessing game")
+# chosen_num = random.randint(1,100)
+# user_num = ''
+# while ( user_num != chosen_num):
+#     user_num = int(input('Enter no: '))
+#     if (user_num > chosen_num):
+#         print('Enter a smaller no')
+#     elif (user_num < chosen_num):
+#         print('Enter a bigger no')
+#     else:
+#         print('Congrats, You found the number')
+# print("Thank you for playing")
+
+# import random
+# while(True):
+#     p1 = input('Choose Rock(r) or Paper(p) or Scissors(s): ').lower()[0]
+#     p2 = random.choice(['r','p','s'])
+#     print(f'Computer chose {p2}')
+#
+#     if (p1 == 'r' and p2 == 'p'):
+#         print('computer wins')
+#     elif (p1 == 'p' and p2 == 'r'):
+#         print('player 1 wins')
+#     elif (p1 == 'p' and p2 == 's'):
+#         print('computer wins')
+#     elif (p1 == 's' and p2 == 'p'):
+#         print('player 1 wins')
+#     elif (p1 == 's' and p2 == 'r'):
+#         print('computer wins')
+#     elif (p1 == 'r' and p2 == 's'):
+#         print('player 1 wins')
+#     elif (p1 == p2):
+#         print('it is a tie')
+#     else:
+#         print('invalid input')
+
+# num = 12314152535
+# no_of_digits = 0
+# sum_of_digits = 0
+# n = num
+# # print(num)
+# # print(num//10)
+# # print(num%10)
+# while(n>0):
+#     last_digit = n % 10
+#     no_of_digits += 1
+#     sum_of_digits += last_digit
+#     n //= 10
+#     print('Last digit :',last_digit)
+#     print('Remaining digits: ',n)
+#
+#
+# print(f"Sum of Digits of {num}: {sum_of_digits}")
+# print(f"No of Digits of {num}: {no_of_digits}")
+
+# saved_password = "pass123"
+# while (True):
+#     user_password = input('Enter password: ')
+#     if (user_password == saved_password):
+#         print("Success")
+#         break
+#     else:
+#         print("Try again")
+
+# i = 0
+# while(i < 10):
+#     i += 1
+#     if(i == 4):
+#         continue
+#     print(i)
+
+# saved_password = "pass123"
+# while (True):
+#     user_password = input('Enter password: ')
+#     if (user_password == saved_password):
+#         print("Success")
+#         break
+#     else:
+#         if ('pass' in user_password):
+#             print('Semi correct password')
+#             continue
+#         print("Try again")
+
+
+# taskmanager.py
+
+# print("Welcome to my task manager app")
+# list_of_tasks = []
+# while(True):
+#     user_option = int(input('\n1.Add a task'
+#                             '\n2.Remove a task'
+#                             '\nenter option: '))
+#     if (user_option == 1):
+#         task = input('Enter task name to add: ')
+#         if task not in list_of_tasks:
+#             list_of_tasks.append(task)
+#             print('Task added successfully')
+#         else:
+#             print("Task already present")
+#     elif (user_option == 2):
+#         task = input('Enter task name to remove: ')
+#         if task in list_of_tasks:
+#             list_of_tasks.remove(task)
+#             print('Task removed successfully')
+#         else:
+#             print("Task not found")
+
+# def function_name(parameters):
+#     statements
+#     statements
+#     statements
+#     statements
+#     statements
+#     statements
+#     statements
+#     statements
+#     statements
+#     return statement
+#
+# function_name(arguments)
+
+# print('Hello')
+# n = input('Name: ')
+
+# User-Defined fn
+# Type 1 no argument and no return
+# def func1():
+#     print('Hiiii')
+# func1()
+
+# Type 2 no argument but return
+# def func2():
+#     return "Hellooo"
+# print(func2())
+
+# Type 3 with argument and no return
+# def func3(s):
+#     print(s)
+# func3('Welcome')
+
+# Type 4  argument and  return
+# def func4(s):
+#     return s
+# print(func4('Thank you'))
+
+# calculator.py
+def add():
+    a = int(input('a='))
+    b = int(input('b='))
+    add = a + b
+    print(f"Addition of {a} and {b} is {add}")
+def sub():
+    a = int(input('a='))
+    b = int(input('b='))
+    sub = a - b
+    return f"Subtraction of {a} and {b} is {sub}"
+def mul(a,b):
+    mul = a * b
+    print(f"Multiplication of {a} and {b} is {mul}")
+def div(a,b):
+    div = a / b
+    return f"Division of {a} and {b} is {div}"
+
+print('Welcome to my Calculator app')
+while True:
+    option = input('\n+ - * /'
+                   '\nEnter option:')
+    if (option == '+'):
+        print('Addition')
+        add()
+    elif (option == '-'):
+        print('Subtraction')
+        print(sub())
+    elif (option == '*'):
+        print('Multiplication')
+        a = int(input('a='))
+        b = int(input('b='))
+        mul(a,b)
+    elif (option == '/'):
+        print('Division')
+        a = int(input('a='))
+        b = int(input('b='))
+        print(div(a,b))
+    else:
+        print('Thank you')
+        break
+

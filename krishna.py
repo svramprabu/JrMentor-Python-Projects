@@ -222,3 +222,69 @@
 # trains = 11
 # number_of_toys = aeroplanes + helicopters + trains
 # print(number_of_toys)
+
+# Comparison operators
+# a = 10
+# b = 8
+# print("Greater than")
+# print(f"{a} > {b} = {a>b}")
+# print(f"{b} > {a} = {b>a}")
+#
+# x = 20
+# y = 45
+# print("Less than")
+# print(f"{x} < {y} = {x<y}")
+# print(f"{y} < {x} = {y<x}")
+
+# a = 10
+# b = 10
+# print('Value equals')
+# print(f"{a}=={b} {a==b}")
+# a = 10
+# b = 20
+# print(f"{a}=={b} {a==b}")
+#
+# a = 10
+# b = 20
+# print('Value not equals')
+# print(f"{a}!={b} {a!=b}")
+# a = 10
+# b = 10
+# print(f"{a}!={b} {a!=b}")
+
+# print('Greater than equal')
+# a = 30
+# b = 20
+# print(f"{a}>={b}={a>=b}")
+# a = 20
+# b = 20
+# print(f"{a}>={b}={a>=b}")
+# a = 20
+# b = 30
+# print(f"{a}>={b}={a>=b}")
+
+# print('less than equal')
+# a = 20
+# b = 30
+# print(f"{a}<={b}={a<=b}")
+# a = 20
+# b = 20
+# print(f"{a}<={b}={a<=b}")
+# a = 20
+# b = 15
+# print(f"{a}<={b}={a<=b}")
+
+# Assignment operators
+
+print('= is an assignment operator')
+# Augmented Assignment operators
+# +=, -=, *=, /=, //=, **=, %=
+a = 10
+print('before',a)
+a += 15 #a+15 -> 25 -> a = 25
+print('after',a)
+
+b = 5
+print('before',b)
+b -= 2
+print('after',b)

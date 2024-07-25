@@ -476,12 +476,53 @@ def pattern():
 #     print('Age should only be between 0 and 100')
 
 
-import re
+# import re
+#
+# s = input('Enter: ')
+# search = input('Pattern: ')
+#
+# found = re.search(search,s)
+# print(f'{search} is present in the string {s} '
+#       f'at the index {found.start()}')
 
-s = input('Enter: ')
-search = input('Pattern: ')
+# class example:
+#     def func(self):
+#         self.name = input('Enter name: ')
+#         print(f'Hii {self.name} from class')
+#
+# obj = example() #instatiation
+# obj.func()
+#
+# obj1 = example()
+# obj1.func()
+#
+# print(obj.name)
 
-found = re.search(search,s)
-print(f'{search} is present in the string {s} '
-      f'at the index {found.start()}')
+
+# class example2:
+#     def func1(self,owner):
+#         self.name = owner
+#
+# obj3 = example2()
+# obj3.func1('varsha')
+# print(obj3.name)
+
+# class constructor:
+#     def __init__(self,door_no):
+#         self.owner = input('Owner: ')
+#         self.door_no = door_no
+#
+# obj_const = constructor(500)
+# print(obj_const.owner)
+# print(obj_const.door_no)
+
+# Single Inheritance
+class Parent:
+    def __init__(self):
+        print('From Parent class')
+class Child(Parent):
+    def __init__(self):
+        print('From Child class')
+    Parent()
+x=Child()
 
