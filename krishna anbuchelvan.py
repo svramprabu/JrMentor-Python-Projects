@@ -1,7 +1,7 @@
 # kri_shna = 12124 #Declaring a variable
 # print(kri_shna)
 
-# eg_str = "Python @123"
+# eg_str = "Completed Python Sessions @123"
 # print(eg_str)
 # print(eg_str[0])
 # print(eg_str[3])
@@ -188,3 +188,191 @@
 # While
 # while (condition):
 #     Statements
+
+# computer_parts = ['monitor','printer','mice','keyboard']
+# for each_part in computer_parts:
+#     print(each_part)
+
+# paragraph = input('Enter / paste para: ')
+# words = paragraph.split()
+# for word in words:
+#     print(word)
+
+# Generate Acronym
+# United States -> US
+# abbr = input('Enter the abbreviated text: ')
+# words = abbr.split()
+# acro = ''
+# for word in words:
+#     acro += word[0].upper()
+# print(f"Acronym for {abbr} is {acro}")
+
+# s = "Krishna"
+# for i in s:
+#     print(i)
+
+# s = input('Enter: ')
+# reverse_s = ''
+# for each_char in s:
+#     reverse_s = each_char + reverse_s
+# print(f"Reverse of {s} is {reverse_s}")
+
+# s = input('Enter: ')
+# letters = 0
+# digits = 0
+# for i in s:
+#     if i.isdigit():
+#         digits += 1
+#     elif i.isalpha():
+#         letters += 1
+# print(f'Number of digits is {digits}\n'
+#       f'Number of Letters is {letters}')
+
+# range(10) -> 0-9
+# range(15) -> 0-14
+# range(3,15) -> 3-14
+
+# for num in range(20):
+#     print(num)
+#
+# for num in range(1,20):
+#     print(num)
+
+# 1 x 5 = 5
+# 2 x 5 = 10
+# 3 x 5 = 15
+# .
+# .
+
+# table_no = int(input('Enter table number: '))
+# for i in range(1,13):
+#     print(f"{i} x {table_no} = {i*table_no}")
+
+# my_list = ['apple','ball','cat','dog','elephant']
+# my_list[0]
+# my_list[1]
+# my_list[2]
+# l=len(my_list)
+# for i in range(l):
+#     print(my_list[i])
+
+# 12345
+# 5
+# 1+2+3+4+5
+# num = int(input('Enter a number: '))
+# d = 0
+# s = 0 #int
+# str_num = str(num)
+# d = len(str_num)
+# for each_d in str_num:
+#     s += int(each_d) #str
+# print(f"sum of {num} is {s}")
+# print(f"Number of digits in {num} is {d}")
+
+# while condition:
+#     statement
+
+# i = 0
+# while i<10:
+#     print(i) #statement
+#     i += 1 #i = i+1
+
+# num = 12341553
+# # print(num % 10)
+# # print(num // 10)
+# s,d=0,0
+# n = num
+# while (n > 0):
+#     last_digit = n % 10
+#     d += 1
+#     s += last_digit
+#     n //= 10 #n = n//10
+# print(f"sum of {num} is {s}")
+# print(f"Number of digits in {num} is {d}")
+
+# saved_password = 'pass123'
+# user_password = input('Enter password: ')
+# while (user_password != saved_password):
+#     if user_password!= saved_password:
+#         print('Try again')
+#         user_password = input('Enter password again: ')
+#     else:
+#         print('success')
+
+# Armstrong number
+# 123
+# 1^3 + 2^3 + 3^3 = 123
+
+# number = int(input('Number: '))
+# n = number
+# s = 0
+# while (n>0):
+#     ld = n % 10
+#     s += (ld ** 3)
+#     n //= 10
+# if number == s:
+#     print('It is an Armstrong number')
+# else:
+#     print("Not an Armstrong number")
+
+# i=0
+# while (i<10):
+#     i+=1
+#     if (i % 5 == 0):
+#         break
+#     print(i)
+
+# saved_pass = "pass123"
+# attempt = 0
+# while True:
+#     user_pass = input('Enter pwd: ')
+#     if user_pass != saved_pass:
+#         if attempt == 2:
+#             print('Your attempts are over')
+#             break
+#         attempt += 1
+#         print(f'You are left with {3-attempt}')
+#         print("Try again")
+#     else:
+#         print("success")
+#         break
+
+# i = 0
+# while i<10:
+#     i+=1
+#     if (i % 5 == 0):
+#         continue
+#     print(i)
+
+# saved_pass = "pass123"
+# attempt = 0
+# while True:
+#     user_pass = input('Enter pwd: ')
+#     if user_pass != saved_pass:
+#         if attempt == 2:
+#             print('Your attempts are over')
+#             break
+#         elif 'pass' in user_pass:
+#             print('semi correct')
+#             continue
+#         attempt += 1
+#         print(f'You are left with {3-attempt}')
+#         print("Try again")
+#     else:
+#         print("success")
+#         break
+
+# my_list = ['Python','Java']
+# for each in my_list:
+#     for ch in each:
+#         print(ch)
+
+# 0 0 1 2
+# 1 0 1 2
+# 2 0 1 2
+
+n = 3 #no of rows as well as no of colums
+for row in range(n):
+    for col in range(n):
+        print(f"{row}{col}",end=" ")
+    print()

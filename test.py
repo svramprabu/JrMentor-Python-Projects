@@ -28,7 +28,42 @@
 
 
 import numpy
-import numpy as np
-arr = np.array([1,2,3],ndmin=2)
-res = arr*2
-print(res)
+# import numpy as np
+# arr = np.array([1,2,3],ndmin=2)
+# res = arr*2
+# print(res)
+
+
+
+n = input('What is your name: ')
+print('My name is',n)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

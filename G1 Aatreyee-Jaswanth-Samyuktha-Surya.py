@@ -36,7 +36,7 @@
 # print(example_list)
 # ex_list = ['jaswanth','aatreyee','samyuktha','surya','mukundan'] #strign only list
 # print(ex_list)
-# my_list = [123,456,67.89,'Python'] #mixed list
+# my_list = [123,456,67.89,'Completed Python Sessions'] #mixed list
 # print(my_list)
 # empty_list = []
 # print(empty_list)
@@ -44,7 +44,7 @@
 # nested_list = [123,[1,2,3]]
 # print(nested_list)
 
-# s = 'Python'
+# s = 'Completed Python Sessions'
 # print(s)
 # print(s[0])
 # print(s[2])
@@ -99,13 +99,13 @@
 # my_dict = {1:'Apple',2:'Orange'} #integer keys
 # print(my_dict)
 #
-# my_dict = {'Name':'Python','Class':'Hackerkid'} #string keys
+# my_dict = {'Name':'Completed Python Sessions','Class':'Hackerkid'} #string keys
 # print(my_dict)
 #
-# my_dict = {1:'Python','Name':'Pycharm'} #mixed keys
+# my_dict = {1:'Completed Python Sessions','Name':'Pycharm'} #mixed keys
 # print(my_dict)
 #
-# my_dict = {1:'Python','Name':'Pycharm'}
+# my_dict = {1:'Completed Python Sessions','Name':'Pycharm'}
 # print(my_dict['Name']) #description
 
 # Typecasting
@@ -143,7 +143,7 @@
 # x = 11
 # y = 2
 # print('x+y=',x + y) #addition
-# a = 'Python'
+# a = 'Completed Python Sessions'
 # b = 'Programming'
 # print('a+b=',a + b) #concatenation
 #
@@ -253,7 +253,7 @@
 # x not in y
 
 # Concatenation:
-# Python program to generate full name given two variable
+# Completed Python Sessions program to generate full name given two variable
 # first_name (has the first name stored in it) and
 # last_name (has last name stored in it)
 
@@ -262,7 +262,7 @@
 # full_name = first_name + last_name
 # print(full_name)
 
-# Python program to find the number of toys x has
+# Completed Python Sessions program to find the number of toys x has
 # if he/she own 2 aeroplanes, 5 helicopters and 11 trains.
 # aeroplanes = 2
 # helicopters = 5
@@ -270,7 +270,7 @@
 # toys = aeroplanes+helicopters+trains
 # print(f'The number of toys are {toys}')
 
-# Python program to find the cost
+# Completed Python Sessions program to find the cost
 # if x plans to buy 8 apples at the price of 17 each
 
 # apples = 8
@@ -278,7 +278,7 @@
 # cost_of_apples = apples * price_of_apple
 # print(f'Cost of the 8 apple at 17 each is {cost_of_apples}')
 
-# Python program to find how many litres of petrol can be
+# Completed Python Sessions program to find how many litres of petrol can be
 # filled in 4 bikes given we have only 14 litres of petrol.
 
 # petrol = 14
@@ -286,7 +286,7 @@
 # petrol_in_bike = petrol / bikes
 # print(f"Petrol in each bike is {petrol_in_bike} litres")
 
-# Python program to find the number of persons that can occupy in
+# Completed Python Sessions program to find the number of persons that can occupy in
 # each cup of a giant wheel with 5 cups and 12 persons.
 # Also, find the number of persons who don’t get to ride in it.
 
@@ -695,44 +695,138 @@
 # print(func4('Thank you'))
 
 # calculator.py
-def add():
-    a = int(input('a='))
-    b = int(input('b='))
-    add = a + b
-    print(f"Addition of {a} and {b} is {add}")
-def sub():
-    a = int(input('a='))
-    b = int(input('b='))
-    sub = a - b
-    return f"Subtraction of {a} and {b} is {sub}"
-def mul(a,b):
-    mul = a * b
-    print(f"Multiplication of {a} and {b} is {mul}")
-def div(a,b):
-    div = a / b
-    return f"Division of {a} and {b} is {div}"
+# def add():
+#     a = int(input('a='))
+#     b = int(input('b='))
+#     add = a + b
+#     print(f"Addition of {a} and {b} is {add}")
+# def sub():
+#     a = int(input('a='))
+#     b = int(input('b='))
+#     sub = a - b
+#     return f"Subtraction of {a} and {b} is {sub}"
+# def mul(a,b):
+#     mul = a * b
+#     print(f"Multiplication of {a} and {b} is {mul}")
+# def div(a,b):
+#     div = a / b
+#     return f"Division of {a} and {b} is {div}"
+#
+# print('Welcome to my Calculator app')
+# while True:
+#     option = input('\n+ - * /'
+#                    '\nEnter option:')
+#     if (option == '+'):
+#         print('Addition')
+#         add()
+#     elif (option == '-'):
+#         print('Subtraction')
+#         print(sub())
+#     elif (option == '*'):
+#         print('Multiplication')
+#         a = int(input('a='))
+#         b = int(input('b='))
+#         mul(a,b)
+#     elif (option == '/'):
+#         print('Division')
+#         a = int(input('a='))
+#         b = int(input('b='))
+#         print(div(a,b))
+#     else:
+#         print('Thank you')
+#         break
 
-print('Welcome to my Calculator app')
-while True:
-    option = input('\n+ - * /'
-                   '\nEnter option:')
-    if (option == '+'):
-        print('Addition')
-        add()
-    elif (option == '-'):
-        print('Subtraction')
-        print(sub())
-    elif (option == '*'):
-        print('Multiplication')
-        a = int(input('a='))
-        b = int(input('b='))
-        mul(a,b)
-    elif (option == '/'):
-        print('Division')
-        a = int(input('a='))
-        b = int(input('b='))
-        print(div(a,b))
-    else:
-        print('Thank you')
-        break
+# from package_g1 import module_g1
+# module_g1.func()
+
+# file = open('filename.extention','processing mode 4+2')
+
+# open('g1.txt')
+# open('g1.txt','w')
+# open('g1.txt','x')
+
+# file = open('g1.txt','w')
+# file.write("Hi from Python class")
+# file.close()
+
+# file = open('g1.txt','x')
+# file.write("Hi from Python class")
+# file.close()
+
+# file = open('g1.txt','a')
+# file.write(" learning file operations")
+# file.close()
+
+# file = open('g1.txt')
+# print(file.read())
+# file.close()
+
+# RegularExpressions - RegEx
+# email = "svr@mail.com"
+# svr - username
+# @ - all email ids mandatory
+# mail - domain
+# . - also mandatory
+# com - text within a list
+
+import re
+
+# s = "Hello all welcome to my malleable"
+# found = re.findall('all',s)
+# print(found)
+
+# searched = re.search('all',s)
+# print(searched.start())
+# print(searched.end())
+
+# my_split = re.split('all',s)
+# print(my_split)
+
+# substituted_text = re.sub(' ','---',s)
+# print(substituted_text)
+
+class Test_class:
+    name = 'Anonymous'
+    def __init__(self,owner):
+        self.name = owner
+        print(self.name)
+
+# test_object = Test_class()
+# test_object.func('My name')
+
+test_object = Test_class('Your name')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -29,7 +29,7 @@
 #     else:
 #         print(f"{each_num} is an odd number")
 
-# s = "Python Programming"
+# s = "Completed Python Sessions Programming"
 # for ch in s:
 #     print(ch)
 
@@ -220,42 +220,207 @@
 
 # taskmanager.py
 
-print('Welcome to my task manager app')
-list_of_task = []
-while(True):
-    user_option = int(input('\n1.Add a task'
-                            '\n2.Remove a task'
-                            '\n3.Search a task'
-                            '\n4.Number of Tasks'
-                            '\n5.Print tasks'
-                            '\nEnter option:'))
-    if (user_option == 1):
-        print("You chose to add a task")
-        task = input('Enter task name: ')
-        if task not in list_of_task:
-            list_of_task.append(task)
-            print('Task addded successfully')
-        else:
-            print('Task already present')
-    elif (user_option == 2):
-        print("You chose to remove a task")
-        task = input('Enter task name: ')
-        if task not in list_of_task:
-            print('Task not found')
-        else:
-            list_of_task.remove(task)
-            print('Task removed successfully')
-    elif (user_option == 3):
-        print("Let's search for a task")
-        task = input('Enter task name: ')
-        if task in list_of_task:
-            print("Task found")
-        else:
-            print("Task not found")
-    elif (user_option == 4):
-        n = len(list_of_task)
-        print(f"The number tasks available are {n}")
-    elif (user_option == 5):
-        print('\nAvailable tasks are')
-        for each in list_of_task:
-            print(f"-> {each}")
+# print('Welcome to my task manager app')
+# list_of_task = []
+# while(True):
+#     user_option = int(input('\n1.Add a task'
+#                             '\n2.Remove a task'
+#                             '\n3.Search a task'
+#                             '\n4.Number of Tasks'
+#                             '\n5.Print tasks'
+#                             '\nEnter option:'))
+#     if (user_option == 1):
+#         print("You chose to add a task")
+#         task = input('Enter task name: ')
+#         if task not in list_of_task:
+#             list_of_task.append(task)
+#             print('Task addded successfully')
+#         else:
+#             print('Task already present')
+#     elif (user_option == 2):
+#         print("You chose to remove a task")
+#         task = input('Enter task name: ')
+#         if task not in list_of_task:
+#             print('Task not found')
+#         else:
+#             list_of_task.remove(task)
+#             print('Task removed successfully')
+#     elif (user_option == 3):
+#         print("Let's search for a task")
+#         task = input('Enter task name: ')
+#         if task in list_of_task:
+#             print("Task found")
+#         else:
+#             print("Task not found")
+#     elif (user_option == 4):
+#         n = len(list_of_task)
+#         print(f"The number tasks available are {n}")
+#     elif (user_option == 5):
+#         print('\nAvailable tasks are')
+#         for each in list_of_task:
+#             print(f"-> {each}")
+
+
+# Functions
+# Type 1
+# def car():
+#     print('bmw')
+# car()
+# print(car())
+
+# Type 2
+# def bus():
+#     return 'Minibus'
+# print(bus())
+# b = bus()
+# print(b)
+
+# Type 3
+# def taxi(passengers):
+#     print(f'We have {passengers} seats in the taxi')
+# taxi(7)
+
+# Type 4
+# def train(seat):
+#     return seat
+# print(train('D15'))
+
+# calculator.py
+
+# def add(): #type 1
+#     a = int(input('a='))
+#     b = int(input('b='))
+#     add = a + b
+#     print(f"Addition of {a} and {b} is {add}")
+# def sub(): #type 2
+#     a = int(input('a='))
+#     b = int(input('b='))
+#     sub = a - b
+#     return f"Subtraction of {a} and {b} is {sub}"
+# def mul(x,y): #type 3
+#     mul = x * y
+#     print(f"Multiplication of {a} and {b} is {mul}")
+# def div(x,y): #type 4
+#     pass
+# print('Welcome to my calculator program')
+# while True:
+#     option = input('+ - * / \nchoose one option:')
+#     if option == '+':
+#         print('Addition')
+#         add()
+#     elif option =='-':
+#         print('Subtraction')
+#         print(sub())
+#     elif option == '*':
+#         print('Multiplication')
+#         a = int(input('a='))
+#         b = int(input('b='))
+#         mul(a,b)
+
+# file operations
+# open
+# close
+# read
+# write
+
+# file = open('filename.extention','processing mode')
+# processing modes 6 -> 4+2
+# r read only mode - default
+# file = open('sashmithran.txt','r')
+# file = open('sashmithran.txt')
+# w write - create / truncate
+# file = open('sashmithran.txt','w')
+# x exclusive creation /error
+# file = open('sashmithran.txt','x')
+# a - append create / not truncate
+# file = open('sashmithran.txt','a')
+# t - text mode - default
+# b - binary mode
+# file = open('sashmithran.txt','x+b')
+
+# close operation
+# file = open('sashmithran.txt')
+#
+# file.close()
+
+# file = open('sashmithran.txt','w')
+# file.write("Hi from Python class")
+# file.close()
+# file = open('sashmithran.txt')
+# print(file.read())
+# file.close()
+
+# file = open('sashmithran.txt','x')
+# file.write("Hi from Python class")
+# file.close()
+# file = open('sashmithran.txt')
+# print(file.read())
+# file.close()
+
+# file = open('sashmithran.txt','a')
+# file.write(" doing file operations")
+# file.close()
+# file = open('sashmithran.txt')
+# print(file.read())
+# file.close()
+
+# Regular Expressions - RegEx
+# svr@mail.com
+# import re
+# s = "Hello all welcome home ball mall call malleable"
+# result = re.findall('all',s)
+# print(result)
+# result = re.search('all',s)
+# print(result.start())
+# print(result.end())
+
+# import re
+# s = "Hello all welcome home ball mall call malleable"
+# split_result = re.split('all',s)
+# print(split_result)
+#
+# sub_s = re.sub(' ','---',s)
+# print(sub_s)
+
+# print(mithran) #NameError
+# print(15+'10')
+# my_list =[1,2,3]
+# print(my_list[5])
+# my_list.remove(10)
+# my_list.removes(10)
+
+# try:
+#     print(mithran)
+# except NameError:
+#     print("Variable not defined")
+#
+# try:
+#     print(15+'10')
+# except TypeError:
+#     print("Type error occured")
+#
+# try:
+#     my_list =[1,2,3]
+    # print(my_list[5])
+    # my_list.remove(10)
+    # my_list.removes(10)
+#     print(13+'6')
+# except IndexError:
+#     print("Index not in range")
+# except ValueError:
+#     print("Value not found")
+# except AttributeError:
+#     print("Attrtribute spelled wrong")
+
+class AgeError(Exception):
+    pass
+
+try:
+    age = int(input('enter your age: '))
+    if age < 0:
+        raise AgeError
+    current_year = 2024
+    birth_year = current_year - age
+    print(f"you were born in {birth_year}")
+except AgeError:
+    print("Enter a positive age")

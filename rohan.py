@@ -8,7 +8,7 @@
 a = 100 #persons
 b = 15 #rooms
 # print(a+b) #addition
-# x = 'Python'
+# x = 'Completed Python Sessions'
 # y = 'Programming'
 # print(x+y) #concatenation
 # print(a-b)
@@ -324,3 +324,93 @@ b = 15 #rooms
 # file = open('rohan.txt','w')
 # file = open('rohan.txt','x')
 # file = open('rohan.txt','a')
+
+# close
+
+# f = open('rohan.txt')
+#
+# f.close()
+# f = open('rohan.txt','w')
+# f.write("HI my name is Rohan")
+# f.close()
+
+# f = open('rohan_python.txt','x')
+# f.write("Hi my name is Rohan and I'm learning python")
+# f.close()
+
+# f = open('rohan.txt','a')
+# f.write(" I am learning python")
+# f.close()
+
+# f = open('rohan.txt')
+# print(f.read())
+
+# RegEx - Regular Expressions
+
+# String
+# email - svr@mail.com
+#         svr
+#         @
+#         mail
+# .
+# com
+
+import re
+
+# s = "Hello all welcome to the malleable"
+# file = open("dakbooeni.txt")
+# s = file.read()
+# print(s)
+# res = re.findall('python',s)
+# print(res)
+# res = re.search('all',s)
+# print(res.start())
+# print(res.end())
+# res = re.split('all',s)
+# print(res)
+# new_s = re.sub('all','---',s)
+# print(new_s)
+
+# s = "Hello Heado Healo"
+# res = re.findall('He..o',s)
+# print(res)
+
+# print(rohan)
+# rohan = 235
+# rohan = [1,2,3]
+# try:
+#     rohan.remove(5)
+# except NameError:
+#     print('variable is not defined')
+# except ValueError:
+#     print('Value not found')
+
+# class AgeError(Exception):
+#     pass
+# while True:
+#     age = int(input('Enter your age: '))
+#     current_year = 2024
+#     try:
+#         if age<0:
+#             raise AgeError
+#         YOB = current_year - age
+#         print(f'You were born in {YOB}')
+#     except AgeError:
+#         print('Enter an appropriate age')
+
+class example:
+    owner = ''
+    def func(self):
+        self.owner=input('Enter owner name: ')
+        print(self.owner)
+
+example_object = example() #creating an instance
+# example_object.owner = 'Rohan'
+example_object.func()
+
+class example:
+    def __init__(self): #constructor
+        self.owner=input('Enter owner name: ')
+        print(self.owner)
+
+example_object = example() #creating an instance

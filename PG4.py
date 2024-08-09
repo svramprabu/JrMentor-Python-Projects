@@ -26,7 +26,7 @@
 # PythonProgramming
 # 0123456789......
 
-# P -> in "Python" -> 0
+# P -> in "Completed Python Sessions" -> 0
 # Q -> in "Query" -> 0
 # S -> in "test" -> 2
 # R -> in "String" -> 2
@@ -36,7 +36,7 @@
 #     n - 2
 #     g - 3
 
-# s = "Python"
+# s = "Completed Python Sessions"
 # print(s)
 # print(s[0])
 # print(s[1])
@@ -97,7 +97,7 @@
 # print('p+q=',p+q)
 #
 # # + concatenation
-# a = 'Python'
+# a = 'Completed Python Sessions'
 # b = 'Program'
 # print('a+b=',a+b)
 
@@ -130,7 +130,7 @@
 # print('3**5=',a**b)
 # 3**5 -> 3*3*3*3*3
 
-# Python program to find the cost of apples
+# Completed Python Sessions program to find the cost of apples
 # if x plans to buy 8 apples at the price of 17 each
 
 # apples = 8
@@ -269,32 +269,131 @@
 # else:
 #     print("It is a weekday")
 
-age = int(input('Enter age: '))
-if age <= 5:
-    print('KG')
-elif age <= 10:
-    print('Primary')
-elif age <= 15:
-    print('Secondary')
-elif age < 18:
-    print('Higher Secondary')
-else:
-    print('Completed school')
+# age = int(input('Enter age: '))
+# if age <= 5:
+#     print('KG')
+# elif age <= 10:
+#     print('Primary')
+# elif age <= 15:
+#     print('Secondary')
+# elif age < 18:
+#     print('Higher Secondary')
+# else:
+#     print('Completed school')
 
+# number = int(input('Enter number: '))
+# reminder = number % 2 #even 0 and odd 1
+# if reminder == 0:
+#     print(f"{number} is an Even number")
+# else:
+#     print(f"{number} is an Odd number")
 
+# p1 = input('Choose Rock(r) or Paper(p) or Scissors(s):')
+# p2 = input('Choose Rock(r) or Paper(p) or Scissors(s):')
+#
+# if (p1=='r' and p2=='p'): # r p
+#     print("player 2 won")
+# elif (p1=='p' and p2=='r'): # p r
+#     print("player 1 won")
+# elif (p1=='s' and p2=='p'): # s p
+#     print("player 1 won")
+# elif (p1=='p' and p2=='s'): # p s
+#     print("player 2 won")
+# elif (p1=='s' and p2=='r'): # s r
+#     print("player 2 won")
+# elif (p1=='r' and p2=='s'): # r s
+#     print("player 1 won")
+# elif (p1 == p2):# r r  p p  s s
+#     print("It is a tie")
+# else:
+#     print("invalid input")
 
+# for while
+# my_list = ['Ayeyi','Harith','Haripriya','Hitha']
+# print(my_list)
+# for name in my_list:
+#     print(name)
 
+# paragraph = "Hi from Python program we are splitting the words from the paragraph"
+# words = paragraph.split()
+# for word in words:
+#     print(word)
+# s = "Ramprabu"
+# print(s[0])
 
+# United States -> US
+# United Nations -> UN
+# text = "Indian Space Research Organisation"
+# words = text.split()
+# acro = ''
+# for word in words:
+#     acro += word[0]
+# print(acro)
 
+# n = 10
+# for i in range(n):
+#     print('python')
 
+# n = 50
+# for i in range(n):
+#     print(i)
 
+# n = 50
+# for i in range(n):
+#     reminder = i % 2
+#     if (reminder != 0):
+#         print(i)
 
+# for i in range(9,35):
+#     print(i)
 
+# 1 x 2 = 2
+# t = 12
+# for i in range(1,11):
+#     result = i*t
+#     print(f"{i} X {t} = {result}")
 
+# s = "Python"
+# for i in s:
+#     print(i)
 
+# s = input('Enter: ')
+# rev_s = ''
+# for each_char in s:
+#     rev_s = each_char + rev_s
+#     print(rev_s)
+# print(rev_s)
 
+# while (5>3):
+#     print('abc')
 
+# i = 0
+# while i<10 :
+#     i += 1
+#     print(i)
 
+# saved_password = "pass123"
+# user_password = input('enter password: ')
+# while(saved_password != user_password):
+#     print("try again")
+#     user_password = input('Enter pwd again: ')
+# print("You have been logged in")
+
+# num = 12345
+# print(num)
+# print(num // 10)
+# print(num % 10)
+
+num = 123456789
+sd = 0
+while (num>0):
+    ld = num % 10
+    print('last digit:',ld)
+    sd += ld
+    print('current sum digits:',sd)
+    num //= 10
+    print('Remaining number: ',num)
+print('Sum of Digits:',sd)
 
 
 
