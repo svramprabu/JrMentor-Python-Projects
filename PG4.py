@@ -384,17 +384,64 @@
 # print(num // 10)
 # print(num % 10)
 
-num = 123456789
-sd = 0
-while (num>0):
-    ld = num % 10
-    print('last digit:',ld)
-    sd += ld
-    print('current sum digits:',sd)
-    num //= 10
-    print('Remaining number: ',num)
-print('Sum of Digits:',sd)
+# num = 123456789
+# sd = 0
+# while (num>0):
+#     ld = num % 10
+#     print('last digit:',ld)
+#     sd += ld
+#     print('current sum digits:',sd)
+#     num //= 10
+#     print('Remaining number: ',num)
+# print('Sum of Digits:',sd)
 
+# i = 0
+# while (i < 10):
+#     i += 1
+#     if i == 6:
+#         break
+#     print(i)
+#
+# i = 0
+# while (i < 10):
+#     i += 1
+#     if i == 6:
+#         continue
+#     print(i)
+
+# number = 1234
+# armstrong no
+# 1*1*1-
+# 2*2*2-
+# 3*3*3-
+# 4*4*4-
+# n = 153
+# 1*1*1=1
+# 5*5*5=125
+# 3*3*3=27
+#       153
+
+# num = int(input('Enter a number: '))
+# n = num #copy of num
+# sum = 0
+# while(True): #runs forever
+#     if n==0:
+#         break
+#     ld = n % 10
+#     print(f"last digit: {ld}")
+#     n = n // 10
+#     print(f"Remaining number: {n}")
+#     cld = ld ** 3 #ld*ld*ld
+#     print(f"cube {ld}*{ld}*{ld}: {cld}")
+#     sum += cld
+#     print(f"sum of cubes: {sum}")
+#
+# if sum == num:
+#     print("Armstrong number")
+# else:
+#     print("Not Armstrong number")
+
+# print()
 
 
 

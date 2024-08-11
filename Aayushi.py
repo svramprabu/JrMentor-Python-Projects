@@ -50,12 +50,60 @@
 # print(number.isdigit())
 # name = "StanLee"
 # print(name.isalpha())
-name = "    Stan Lee     "
-print(name.strip())
-eg_str = "Python @1!"
-print(eg_str[0])
-print(eg_str[4])
-print(eg_str[7])
+# name = "    Stan Lee     "
+# print(name.strip())
+# eg_str = "Python @1!"
+# print(eg_str[0])
+# print(eg_str[4])
+# print(eg_str[7])
+#
+# print(eg_str[-1])
+# print(eg_str[-8])
 
-print(eg_str[-1])
-print(eg_str[-8])
+# String slicing
+s = "Python Programming"
+# print(s[start:end:[step=1]])
+# print(s[3:12])
+# print(s[:])
+# print(s[3:])
+# print(s[:12])
+# print(s[::1])
+# print(s[::2])
+# print(s[::-1]) #reversed string
+
+# List and Tuple
+# Ordered collection
+# duplicate elements
+# int,float,string, mixed
+# empty
+# name_of_list[index]
+
+# [] and ()
+# Mutable and Immutable
+
+# empty_list = []
+# print(empty_list)
+# empty_tuple = ()
+# print(empty_tuple)
+# int_list = [1,2,3,4,5]
+# print(int_list)
+# int_tuple = (1,2,3,4,5)
+# print(int_tuple)
+# str_list = ['aayushi','python','mdu']
+# print(str_list)
+# str_tuple = ('aayushi','python','mdu')
+# print(str_tuple)
+# mixed_list = [123,35.56,'aayushi']
+# print(mixed_list)
+# mixed_tuple = (123,35.56,'aayushi')
+# print(mixed_tuple)
+
+# nested_list = [[1,2],[3,4],'python']
+# print(nested_list)
+# nested_tuple = ((1,2),(3,4))
+# print(nested_tuple)
+
+my_list = ['python','java','c++']
+print(my_list)
+print(my_list[0])
+print(my_list[1])

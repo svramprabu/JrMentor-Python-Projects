@@ -371,8 +371,56 @@
 # 1 0 1 2
 # 2 0 1 2
 
-n = 3 #no of rows as well as no of colums
-for row in range(n):
-    for col in range(n):
-        print(f"{row}{col}",end=" ")
-    print()
+# n = 3 #no of rows as well as no of colums
+# for row in range(n):
+#     for col in range(n):
+#         print(f"{row}{col}",end=" ")
+#     print()
+
+# def func1():
+#     print('abc')
+#     print(123)
+#
+# func1()
+#
+# def func2():
+#     c = 5+3
+#     return True
+#
+# add = func2()
+# print(add)
+# print(func2())
+
+# name = input('name?')
+
+# def func3(a):
+#     print(a)
+#
+# c = 10
+# func3(c) #pass by ref
+# func3(13) #pass by value
+#
+# def func4(a,b):
+#     c = a+b
+#     return c
+#
+# add = func4(4,5)
+# print(add)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
