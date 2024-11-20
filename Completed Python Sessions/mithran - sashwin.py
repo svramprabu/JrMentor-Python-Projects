@@ -412,15 +412,63 @@
 # except AttributeError:
 #     print("Attrtribute spelled wrong")
 
-class AgeError(Exception):
-    pass
+# class AgeError(Exception):
+#     pass
+#
+# try:
+#     age = int(input('enter your age: '))
+#     if age < 0:
+#         raise AgeError
+#     current_year = 2024
+#     birth_year = current_year - age
+#     print(f"you were born in {birth_year}")
+# except AgeError:
+#     print("Enter a positive age")
 
-try:
-    age = int(input('enter your age: '))
-    if age < 0:
-        raise AgeError
-    current_year = 2024
-    birth_year = current_year - age
-    print(f"you were born in {birth_year}")
-except AgeError:
-    print("Enter a positive age")
+# a = 10
+# print(type(a))
+
+# instance
+# instantiation
+
+# class Example:
+#     def func(self):
+#         print(12345)
+#
+# object_example = Example()
+# object_example.func()
+
+
+# class House:
+#     owner = 'Anonymous'
+#     def func(self):
+#         print('Owner is',self.owner)
+#
+# object_example = House()
+# object_example.owner = 'Mithran'
+# object_example.func()
+#
+# house2 = House()
+# house2.func()
+
+# class House:
+#
+#     def func(self,owner_name='Anonymous'):
+#         self.owner = owner_name
+#         print('Owner is',self.owner)
+#
+# my_home = House()
+# my_home.func()
+#
+# ur_home = House()
+# ur_home.func('Mithran')
+
+# class Home:
+#     def __init__(self,owner_name): #constructor
+#         self.owner = owner_name
+#         print('Owner is',self.owner)
+#
+# mithran_house = Home('Mithran')
+
+# class AgeError(Exception):
+#     pass

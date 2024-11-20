@@ -35,10 +35,11 @@ import numpy
 
 
 
-n = input('What is your name: ')
-print('My name is',n)
+# n = input('What is your name: ')
+# print('My name is',n)
 
-
+import datetime
+print(datetime.datetime.today())
 
 
 

@@ -1,5 +1,6 @@
 # kri_shna = 12124 #Declaring a variable
 # print(kri_shna)
+from os import truncate
 
 # eg_str = "Completed Python Sessions @123"
 # print(eg_str)
@@ -420,7 +421,139 @@
 
 
 
+# def main():
+#     user_input = 1
+#     if user_input == 1:
+#         print('Addition')
+#         add()
+#
+# def add():
+#     a = 10
+#     b = 15
+#     add = a+b
+#     print("Result:",add)
+#
+# main()
+
+# r - read only mode - default
+# file = open('krish.txt','r')
+# file = open('krish.txt')
+
+# w - write - create / truncate
+# file = open('krish.txt','w')
+
+# x - exclusive creation
+# file = open('krish.txt','x')
+
+# a - append mode - create / not truncate
+# file = open('krish.txt','a')
+
+# t - text mode - default
+# file = open('krish.txt','r+t')
+
+# b - binary mode -
+# file = open('krish.txt','r+b')
+
+# file = open('krish.txt')
+#
+# file.close()
+
+# file = open('krish.txt')
+# print(file.read())
+# file.close()
+
+# file = open('krishw.txt','w')
+# file.write("Hellooo there")
+# file.close()
+# file = open('krishw.txt')
+# print(file.read())
+# file.close()
+
+# file = open('krishw.txt','a')
+# file.write(" Yeah i'm here")
+# file.close()
+# file = open('krishw.txt')
+# print(file.read())
+# file.close()
+#
+# file = open('krishx.txt','x')
+# file.write("created exclusively")
+# file.close()
+# file = open('krishx.txt')
+# print(file.read())
+# file.close()
+
+# open('krish')
+# print(krish)
+
+# try:
+#     statement
+# except:
+#     alternative statement
 
 
+# if (12):
+#     print(12)
+#     if 
+# else:
+#     print(24)
 
+# def main():
+#     pass
+
+# def date_check(date):
+#     pass
+
+# def convert():
+#     pass
+
+# if __name__=='__main__':
+#     main()
+
+# print(type(123))
+
+# def func():
+#     pass
+
+# func() #calling
+
+# instantiation
+# instance of the class
+
+# class Example():
+#     def eg(self):
+#         print(123)
+
+# a = Example() 
+# a.eg()
+# a->instance
+
+# class House():
+#     def owner(self,owner_name):
+#         print(f"Owner of the house is {owner_name}")
+
+# h1 = House()
+# h1.owner('Krishna')
+# h2 = House()
+# h2.owner('Anbu')
+
+# class House():
+#     def owner(self,o):
+#         self.owner_name = o
+#         print(f"Owner of the house is {self.owner_name}")
+
+# h1 = House()
+# h1.owner('Krishna')
+# print(h1.owner_name)
+# h2 = House()
+# h2.owner('Anbu')
+# print(h2.owner_name)
+
+
+# class House():
+#     def __init__(self,o):
+#         # print(123)
+#         self.owner_name = o
+# h1 = House('krishna')
+# print(h1.owner_name)
 
