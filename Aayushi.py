@@ -569,22 +569,131 @@ b = 3
 # int('123')
 
 # type 1 no return and no arguments
-def fn1():
-    fname = input('first name: ')
-    lname = input('last name: ')
-    print(f"{fname} {lname}")
+# def fn1():
+#     fname = input('first name: ')
+#     lname = input('last name: ')
+#     print(f"{fname} {lname}")
 
 # fn1()
 
 # type 2 return but no argument
-def even_odd():
-    n = int(input('Enter no: '))
-    if (n % 2 == 0):
-        return True
-    else:
-        return False
+# def even_odd():
+#     n = int(input('Enter no: '))
+#     if (n % 2 == 0):
+#         return True
+#     else:
+#         return False
+#
+# if (even_odd()):
+#     print('Even')
+# else:
+#     print('Odd')
 
-if (even_odd()):
-    print('Even')
-else:
-    print('Odd')
+# type 3 no return but arguments passed
+def prime(n):
+    for i in range(2,n):
+        if (n % i == 0):
+            print('Not a prime no')
+            break
+
+
+# prime(8) #pass by value
+# # num = int(input('Number: '))
+# num = 10
+# prime(num) #pass by reference
+
+# #type 4 returns a value and passes argument
+# def is_prime(n):
+#     for i in range(2,n):
+#         if (n % i == 0):
+#             return 'Not a prime no'
+#     return 'Prime No'
+#
+# print(is_prime(10))
+# print(is_prime(7))
+
+# def func():
+#     pass
+#
+# func()
+
+# def main():
+#     num = int(input('Enter a no: '))
+#     if (is_prime(num)):
+#         print('Prime no')
+#     else:
+#         print('Not a prime no')
+
+# def is_prime(n):
+#     for i in range(2,n):
+#         if (n % i == 0):
+#             return False
+#     return True
+#
+# main()
+
+
+# def main():
+#     f()
+# def f():
+#     pass
+# main()
+
+
+
+# calculator.py
+def main():
+    print('Welcome to my calculator app')
+    while True:
+        option = input('+ - * / : ')
+        if (option == '+'):
+            add()
+        elif(option == '-'):
+            print(subtract())
+        elif (option == '*'):
+            a = int(input('a='))
+            b = int(input('b='))
+            multiply(a,b)
+        elif (option == '/'):
+            a = int(input('a='))
+            b = int(input('b='))
+            print(division(a,b))
+        else:
+            print('Invalid')
+            break
+def add(): #type 1
+    while True:
+        try:
+            a = int(input('a='))
+            b = int(input('b='))
+            print(f"{a}+{b}={a+b}")
+            break
+        except ValueError:
+            continue
+def subtract():
+    a = int(input('a='))
+    b = int(input('b='))
+    return f"{a}-{b}={a-b}"
+def multiply(a,b): #type 3
+    print(f"{a}*{b}={a*b}")
+def division(a,b): #type 4
+    return f"{a}/{b}={a/b}"
+
+main()
+
+# print(abc) #NameError
+# print(12+'1') #TypeError
+my_list = [1,2,3]
+# print(my_list[4]) #IndexError
+# my_list.remove(12) #ValueError
+# my_list.removes(1) #AttributeError
+
+# try:
+#     statement
+# except:
+#     alternative statement
+
+# try:
+#     print(abc)
+# except:
+#     print('There is a NameError in the code')

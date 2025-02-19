@@ -17,9 +17,16 @@ def main():
             print('Invalid option')
             break
 def add():
-    a = int(input('a='))
-    b = int(input('b='))
-    print(f"{a}+{b}={a+b}")
+    while True:
+        try:
+            a = int(input('a='))
+            b = int(input('b='))
+            print(f"{a}+{b}={a + b}")
+            break
+        except ValueError:
+            print('Enter a no')
+
+
 def subtract():
     a = int(input('a='))
     b = int(input('b='))

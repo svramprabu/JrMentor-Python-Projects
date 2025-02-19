@@ -616,6 +616,33 @@
 #     else:
 #         print('Invalid option')
 
-import random
-dice = random.randint(1,6)
-print(f"After rolling the dice we got {dice}")
+# import random
+# dice = random.randint(1,6)
+# print(f"After rolling the dice we got {dice}")
+
+# import random
+# chosen_number = random.randint(1,100)
+# while True:
+#     user_number = int(input('Enter no:'))
+#     if user_number > chosen_number:
+#         print('Enter a smaller no')
+#     elif user_number < chosen_number:
+#         print('Enter a bigger no')
+#     else:
+#         print('Success')
+#         break
+
+# import g7_calculcator
+# g7_calculcator.add()
+# g7_calculcator.multiply(3,5)
+# print(g7_calculcator.subtract())
+# print(g7_calculcator.divide(15,3))
+
+# from g7_calculcator import add
+# add()
+
+try:
+    a = int(input('Enter a no: '))
+    print(b)
+except ValueError:
+    print('Not an integer')
